@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  src: url(/fonts/Pretendard-SemiBold.eot);
+  src: url(/fonts/Pretendard-SemiBold.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/Pretendard-SemiBold.woff2) format('woff2'),
+  url(/fonts/Pretendard-SemiBold.woff) format('woff'),
+  url(/fonts/Pretendard-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  src: url(/fonts/Pretendard-Bold.eot);
+  src: url(/fonts/Pretendard-Bold.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/Pretendard-Bold.woff2) format('woff2'),
+  url(/fonts/Pretendard-Bold.woff) format('woff'),
+  url(/fonts/Pretendard-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  src: url(/fonts/Pretendard-ExtraBold.eot);
+  src: url(/fonts/Pretendard-ExtraBold.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/Pretendard-ExtraBold.woff2) format('woff2'),
+  url(/fonts/Pretendard-ExtraBold.woff) format('woff'),
+  url(/fonts/Pretendard-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  src: url(/fonts/Pretendard-Medium.eot);
+  src: url(/fonts/Pretendard-Medium.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/Pretendard-Medium.woff2) format('woff2'),
+  url(/fonts/Pretendard-Medium.woff) format('woff'),
+  url(/fonts/Pretendard-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  src: url(/fonts/Pretendard-Regular.eot);
+  src: url(/fonts/Pretendard-Regular.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/Pretendard-Regular.woff2) format('woff2'),
+  url(/fonts/Pretendard-Regular.woff) format('woff'),
+  url(/fonts/Pretendard-Regular.ttf) format('truetype');
+}
+
+
+* {
+  font-family: 'Pretendard';
+  -webkit-overflow-scrolling: touch;
+  letter-spacing: -.5px;
+  box-sizing: border-box;
+  word-break:keep-all;
+  font-weight: 400;
+}
+
+html,
+body,
+p,
+input,
+select,
+form,
+label,
+mark,
+ul,
+ul li,
+ol,
+ol li,
+dl,
+dl dt,
+dl dd,
+img,
+a,
+table,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #555;
+  text-decoration: none !important;
+}
+
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none !important;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+button {
+  position: relative;
+  transition: .2s;
+}
+
+font br,
+font+br {
+  display: none;
+}
+
+button:active {
+  transform: scale(.95);
+}
+
+button[disabled] {
+  transform: scale(1) !important;
+  cursor: default;
+}
+
+input::placeholder {
+  color: #C4C6D1;
+}
+textarea::placeholder {
+  color: #C4C6D1;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  outline: none;
+  background: url(/image/bg/bg-chk-off.svg) no-repeat;
+  background-size: 24px 24px;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked {
+  width: 24px;
+  height: 24px;
+  background: url(/image/bg/bg-chk-on.svg) no-repeat;
+  background-size: 24px 24px;
+}
+
+input[type=checkbox]::-ms-check {
+  border: 0;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background: url(/image/bg/bg-chk-off.svg) no-repeat;
+  background-size: 24px 24px;
+}
+
+input[type=checkbox]:checked::-ms-check {
+  color: transparent;
+  background: url(/image/bg/bg-chk-on.svg) no-repeat;
+  background-size: 24px 24px;
+}
+
+input[type=radio] {
+  outline: none;
+  background: url(/image/bg/bg-rd-off.svg) no-repeat;
+  background-size: 24px 24px;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+  width: 24px;
+  height: 24px;
+  background: url(/image/bg/bg-rd-on.svg) no-repeat;
+  background-size: 24px 24px;
+}
+
+input[type=radio]::-ms-check {
+  border: 0;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background: url(/image/bg/bg-rd-off.svg) no-repeat;
+  background-size: 24px 24px;
+}
+
+input[type=radio]:checked::-ms-check {
+  color: transparent;
+  background: url(/image/bg/bg-rd-on.svg) no-repeat;
+  background-size: 24px 24px;
+}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+.formItem {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.formItem .label {
+  font-size: 16px;
+  color: #03050F;
+  height: 22px;
+  line-height: 22px;
+}
+
+.formItem .formCols {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.formItem .formCols .input {
+  width: 100%;
+  flex: 1;
+  height: 42px;
+  border: 0;
+  border-bottom: 1px solid #03050F;
+  color: #03050F;
+  font-size: 16px;
+  background: #fff;
+  padding: 0 6px;
+}
+
+.formItem .formCols .input.datepicker {
+  background: #fff url(/image/ico/ico-calendar.svg) no-repeat right center;
+}
+
+.formItem .formCols .input.timepicker {
+  background: #fff url(/image/ico/ico-timepicker.svg) no-repeat right center;
+}
+
+.required {
+  color: #ff0000;
+  padding-left: 5px;
+}
+
+.calendarContainer {
+  position: absolute;
+  left: 0;
+  top: 73px;
+  z-index: 10;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.formCols :global(.rs-picker-toggle-wrapper) {
+  width: 100%;
+}
+
+.formCols :global(.rs-input-group.rs-input-group-inside) {
+  border: 0;
+  height: 42px;
+  border-bottom: 1px solid #03050F !important;
+  border-radius: 0;
+  padding: 0;
+}
+
+.formCols :global(.rs-input-group.rs-input-group-inside .rs-input-group-addon) {
+  padding: 10px 3px;
+}
+
+.formCols :global(.rs-input-group.rs-input-group-inside .rs-input) {
+  color: #03050F;
+  font-size: 16px;
+  background: #fff;
+  padding: 0;
+}
+
+.formCols :global(.rs-input-group.rs-input-group-inside .rs-input-group-addon) svg {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(205deg) brightness(103%) contrast(97%);
+}
+
+.formItem :global(.rdrDateDisplayWrapper) {
+  display: none;
+}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.formItem {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.formItem .label {
+  font-size: 16px;
+  color: #03050F;
+  height: 22px;
+  line-height: 22px;
+}
+
+.formItem .formCols {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.formItem .formCols .textarea {
+  width: 100%;
+  flex: 1;
+  height: 280px;
+  border: 0;
+  border-bottom: 1px solid #03050F;
+  color: #03050F;
+  font-size: 16px;
+  background: #fff;
+}
+
+.required{
+  color: #ff0000;
+  padding-left: 5px;
+}

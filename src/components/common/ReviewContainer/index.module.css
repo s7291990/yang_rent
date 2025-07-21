@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+/** 신뢰의 이동, 올림푸스 영역 */
+.homeReviews{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 150px 0;
+  background: #ECEDF0 url(/image/bg/bg-review.png) no-repeat right top;
+  background-size: contain;
+}
+.homeReviews .rela{
+  width: calc( 100% - 40px );
+  max-width: 1400px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.homeReviews .rela .cate{
+  width: 100%;
+  font-size: 14px;
+  color: #005296;
+  font-weight: 600;
+}
+.homeReviews .rela .title{
+  width: 100%;
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+  margin-top: 24px;
+}
+.homeReviews .rela .desc{
+  width: 100%;
+  font-size: 16px;
+  color: #636779;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.reviewSwiper{
+  width: 100%;
+  margin-top: 80px;
+}
+.reviewSwiper :global(.swiper){
+  padding-bottom: 80px;
+}
+.reviewSwiper :global(.swiper-slide){
+  width: 440px;
+}
+.reviewSwiper :global(.swiper-pagination){
+  bottom: 0;
+}
+.reviewSwiper :global(.swiper-pagination-bullet){
+  width: 12px;
+  height: 12px;
+  background: #C4C6D1;
+  opacity: 1;
+}
+.reviewSwiper :global(.swiper-pagination-bullet-active){
+  background: #03050F;
+}
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 769px) {
+  .homeReviews{
+    padding: 40px 0;
+  }
+  .homeReviews .rela{
+    overflow: visible;
+  }
+  .homeReviews .rela .title{
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .homeReviews .rela .desc{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .reviewSwiper{
+    margin-top: 40px;
+    width: calc( 100% + 40px );
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .reviewSwiper :global(.swiper){
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reviewSwiper :global(.swiper-slide){
+    width: 240px;
+  }
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.reviewItem{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  padding: 40px;
+}
+.reviewItem .subject{
+  width: 100%;
+  height: 72px;
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.reviewItem .desc{
+  width: 100%;
+  height: 96px;
+  overflow: hidden;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #636779;
+  margin-top: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.reviewItem .colsItem{
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+.reviewItem .colsItem .profile{
+  width: 70px;
+  height: 70px;
+}
+.reviewItem .colsItem .profile img{
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.reviewItem .colsItem .info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.reviewItem .colsItem .info span{
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 700;
+  position: relative;
+}
+.reviewItem .colsItem .info span + span:before{
+  content: "";
+  width: 1px;
+  height: 14px;
+  overflow: hidden;
+  display: block;
+  background: #636779;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -7px;
+}
+
+@media (max-width: 769px) {
+  .reviewItem{
+    padding: 20px;
+  }
+  .reviewItem .subject{
+    font-size: 18px;
+    height: 50px;
+    line-height: 25px;
+  }
+  .reviewItem .desc{
+    font-size: 14px;
+    height: 80px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .reviewItem .colsItem{
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .reviewItem .colsItem .profile{
+    width: 40px;
+    height: 40px;
+  }
+  .reviewItem .colsItem .profile img{
+    width: 40px;
+    height: 40px;
+  }
+  .reviewItem .colsItem .info{
+    gap: 20px;
+  }
+  .reviewItem .colsItem .info span{
+    font-size: 18px;
+  }
+  .reviewItem .colsItem .info span + span:before{
+    left: -10px;
+  }
+}

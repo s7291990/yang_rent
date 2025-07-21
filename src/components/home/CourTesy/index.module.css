@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+
+
+/** 사고대차 문의하기 영역 */
+.homeCourtesyCar {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: url(/image/bg/bg-courtesy-car.png) no-repeat center bottom;
+  background-size: cover;
+  padding: 90px 100px;
+  margin: 0 auto 150px auto;
+}
+
+.homeCourtesyCar .cate {
+  width: 100%;
+  font-size: 14px;
+  color: #91B9D9;
+  font-weight: 600;
+}
+
+.homeCourtesyCar .cont {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.homeCourtesyCar .cont .title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.homeCourtesyCar .cont .desc {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.homeCourtesyCar .cont button {
+  width: 200px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #03050F;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 769px) {
+  .homeCourtesyCar {
+    height: auto;
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+
+  .homeCourtesyCar .cont .title {
+    font-size: 24px;
+  }
+
+  .homeCourtesyCar .cont .desc {
+    font-size: 14px;
+  }
+
+  .homeCourtesyCar .cont button {
+    position: static;
+    height: 50px;
+    margin: 50px auto 150px auto;
+    font-size: 18px;
+  }
+}

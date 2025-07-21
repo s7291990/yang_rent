@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+
+/** 하단 영역 */
+footer.footer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 100px 0;
+  background: #03050F;
+}
+
+footer .footerContainer {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .footerLeft {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+footer .footerLeft>.flogo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footerLeft .flogo span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #C4C6D1;
+}
+
+footer .fnbList {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .fnbList li {
+  position: relative;
+}
+
+footer .fnbList li+li:before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -5px;
+  display: block;
+  background: #636779
+}
+
+footer .fnbList li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #C4C6D1;
+}
+
+footer .infoList {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px 20px;
+  max-width: 500px;
+}
+footer .infoList + .infoList{
+  margin-top: 0;
+}
+
+footer .infoList li {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: #C4C6D1;
+}
+
+footer .infoList li+li:before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -5px;
+  display: block;
+  background: #636779
+}
+
+footer .copyright {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #C4C6D1;
+}
+
+footer .footerRight {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+footer .footerRight ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footerRight ul li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+footer .footerRight ul li Link {
+  display: flex;
+}
+
+footer .footerRight .tel {
+  margin-top: 23px;
+  line-height: 63px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .footerRight .operatingHours {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footerRight .operatingHours span {
+  font-size: 14px;
+  color: #C4C6D1;
+}
+
+@media (max-width: 1200px) {
+  footer.footer{
+    padding: 40px 0;
+  }
+  footer .footerContainer{
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footerLeft>.flogo{
+    gap: 10px;
+  }
+  footer .footerLeft>.flogo img{
+    width: 54px;
+  }
+  footer .footerLeft>.flogo span{
+    font-size: 14px;
+  }
+  footer .fnbList{
+    margin-top: 20px;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+  }
+  footer .fnbList li+li:before{
+    left: -10px;
+  }
+  footer .infoList{
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  footer .copyright{
+    margin-top: 20px;
+  }
+  footer .footerRight{
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerRight .tel{
+    margin-top: 0;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .fnbList{
+    gap: 10px 0;
+    justify-content: flex-start;
+  }
+  footer .fnbList li{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer .fnbList li:before{
+    display: none !important;
+  }
+  footer .infoList{
+    gap: 5px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  footer .infoList li{
+    width: 100%;
+    text-align: left;
+  }
+  footer .infoList li+li:before{
+    display: none;
+  }
+  footer .footerLeft>.flogo{
+    justify-content: flex-start;
+  }
+  footer .footerRight{
+    position: static;
+    margin-top: 40px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  footer .copyright{
+    text-align: left;
+  }
+}

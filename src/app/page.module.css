@@ -1,0 +1,999 @@
+@charset "UTF-8";
+
+
+.btnReservation {
+  width: 220px;
+  height: 74px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 0;
+  background: #03050F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/** 전국 최대규모 6만대 이상의 차량 확보 */
+.homeScale {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.homeScale .rela {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  overflow: hidden;
+  margin: 0 auto;
+  height: auto;
+}
+
+.homeScale .rela .cate {
+  width: 100%;
+  font-size: 14px;
+  color: #005296;
+  font-weight: 600;
+}
+
+.scaleInfobox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.homeScale .rela .title {
+  width: 50%;
+  font-size: 48px;
+  font-weight: 700;
+  color: #03050F;
+  line-height: 1.1em;
+}
+
+.homeScale .rela .desc {
+  width: 50%;
+  text-align: right;
+  font-size: 16px;
+  color: #636779;
+  line-height: 1.5em;
+}
+
+.homeScale .rela ul {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeScale .rela ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0 20px 0;
+}
+
+.homeScale .rela ul li .value {
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.homeScale .rela ul li .label {
+  font-size: 16px;
+  color: #636779;
+}
+
+/** 신뢰의 이동, 올림푸스 영역 */
+.homeTrust {
+  width: 100%;
+  height: auto;
+  padding: 150px 0;
+  overflow: hidden;
+}
+
+.homeTrust .rela {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.homeTrust .rela .image {
+  width: 650px;
+  height: auto;
+  overflow: hidden;
+}
+
+.homeTrust .rela .image img {
+  width: 100%;
+  float: left;
+}
+
+.homeTrust .rela .cont {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  overflow: hidden;
+}
+
+.homeTrust .rela .cont .cate {
+  font-size: 14px;
+  color: #005296;
+  font-weight: 600;
+}
+
+.homeTrust .rela .cont .title {
+  width: 100%;
+  font-size: 48px;
+  font-weight: 700;
+  color: #03050F;
+  margin-top: 20px;
+}
+
+.homeTrust .rela .cont .desc {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #636779;
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+
+.homeTrust .rela .cont ul {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.homeTrust .rela .cont ul li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.homeTrust .rela .cont ul li .icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+
+.homeTrust .rela .cont ul li .icon img {
+  width: 100%;
+}
+
+.homeTrust .rela .cont ul li .rowsItem {
+  width: 100%;
+  flex: 1;
+}
+
+.homeTrust .rela .cont ul li .rowsItem .key {
+  font-size: 24px;
+  font-weight: 700;
+  color: #03050F;
+}
+
+.homeTrust .rela .cont ul li .rowsItem .value {
+  font-size: 16px;
+  color: #636779;
+  margin-top: 20px;
+}
+
+.homeTrust .rela .cont button {
+  margin-top: 80px;
+  width: 200px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #03050F;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+/** 배너 영역 */
+.homeBanner {
+  width: 100%;
+  height: 55.6vw;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.homeBanner:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  background: rgba(0,0,0,0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index :20;
+}
+
+.homeBanner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 16/9;
+  display: block;
+}
+
+.homeBanner img {
+  width: 100%;
+}
+
+/** 쉽고 빠른 예약 방법 영역 */
+.homeMethod {
+  width: 100%;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.homeMethod .cate {
+  width: 100%;
+  font-size: 14px;
+  color: #005296;
+  font-weight: 600;
+}
+
+.homeMethod .title {
+  width: 100%;
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+.homeMethod .desc {
+  width: 100%;
+  font-size: 16px;
+  color: #636779;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.homeMethod ul {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeMethod ul li {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.homeMethod ul li:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+  background: #ECEDF0;
+  position: absolute;
+  left: -50%;
+  top: 24px;
+}
+
+.homeMethod ul li:first-child:before {
+  display: none;
+}
+
+.homeMethod ul li .step {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ECEDF0;
+  display: flex;
+  position: relative;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 700;
+}
+
+.homeMethod ul li .key {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 700;
+}
+
+.homeMethod ul li .value {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #636779;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/** QNA 방법 영역 */
+.homeQna {
+  width: 100%;
+  padding: 150px 0;
+  background: #ECEDF0;
+}
+
+.homeQna .rela {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.homeQna .rela .qnaItem {
+  width: 490px;
+  height: 424px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #005296;
+  position: relative;
+  padding: 40px;
+}
+
+.homeQna .rela .qnaItem .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3em;
+}
+
+.homeQna .rela .qnaItem img {
+  width: 350px;
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+}
+
+.homeQna .rela ul {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.homeQna .rela ul li {
+  width: calc(50% - 12px);
+  height: 200px;
+  overflow: hidden;
+}
+
+.homeQna .rela ul li a {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  position: relative;
+}
+
+.homeQna .rela ul li a .title {
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding-right: 56px;
+}
+
+.homeQna .rela ul li a img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.homeQna .rela ul li a.on{
+  background: #005296;
+}
+.homeQna .rela ul li a.on .title{
+  color: #fff;
+}
+.homeQna .rela ul li a.on img{
+  filter: brightness(0) saturate(100%) invert(91%) sepia(0%) saturate(3847%) hue-rotate(225deg) brightness(110%) contrast(100%);
+}
+
+/** 공지사항 영역 */
+.homeNotice {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 150px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 67px;
+  position: relative;
+}
+
+.homeNotice .cont {
+  width: 100%;
+  flex: 1;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.homeNotice .cont .cate {
+  width: 100%;
+  font-size: 14px;
+  color: #005296;
+  font-weight: 600;
+}
+
+.homeNotice .cont .noticeLink {
+  display: flex;
+  width: 100%;
+  margin-top: 90px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.homeNotice .cont .noticeLink .title {
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.homeNotice .cont .noticeLink .date {
+  width: 100%;
+  font-size: 14px;
+  color: #636779;
+  margin-top: 24px;
+}
+
+.homeNotice .cont .noticeLink .desc {
+  font-size: 16px;
+  color: #636779;
+  line-height: 30px;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  margin-top: 24px;
+}
+
+.homeNotice .noticeMore {
+  position: absolute;
+  left: 0;
+  bottom: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  height: 42px;
+}
+
+.homeNotice .noticeMore span {
+  font-size: 16px;
+  color: #03050F
+}
+
+.homeNotice .noticeMore img {}
+
+.homeNotice .image {
+  width: 760px;
+  height: auto;
+  overflow: hidden;
+}
+
+.homeNotice .image img {
+  width: 100%;
+  float: left;
+  object-fit: cover;
+}
+
+/** 더 궁금한 사항이 있으신가요? 영역 */
+.homeHelp {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  height: auto;
+  overflow: hidden;
+  padding: 60px;
+  background: #ECEDF0;
+  border-radius: 24px;
+  margin: 0 auto 150px auto;
+}
+
+.homeHelp .cate {
+  width: 100%;
+  font-size: 16px;
+  color: #636779;
+}
+
+.homeHelp .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.homeHelp .info .description {
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.homeHelp .info .tel {
+  font-size: 64px;
+  color: #005296;
+  font-weight: 700;
+}
+
+.formItem.flex2 {
+  flex: 2
+}
+
+@media (max-width: 1200px) {
+  .scaleInfobox {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homeScale .rela .title {
+    width: 100%;
+  }
+
+  .homeScale .rela .desc {
+    text-align: left;
+    width: 100%;
+  }
+
+  .homeScale .rela .desc br {
+    display: none;
+  }
+
+  .homeTrust .rela {
+    gap: 40px;
+  }
+
+  .homeTrust .rela .image {
+    width: 40%;
+  }
+
+  .homeQna .rela .qnaItem {
+    width: 30%;
+  }
+
+  .homeQna .rela .qnaItem .title {
+    font-size: 26px;
+  }
+
+  .homeNotice .image {
+    width: 50%;
+  }
+
+  .homeHelp .info .description {
+    font-size: 32px;
+  }
+
+  .homeHelp .info .tel {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 769px) {
+  .formItem {
+    flex: initial !important;
+    width: 100% !important;
+  }
+
+  .formItem.flex2 {
+    width: 100% !important;
+  }
+
+  .btnReservation {
+    flex: initial;
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .homeScale {
+    margin-top: 40px;
+  }
+
+  .homeScale .rela .title {
+    font-size: 24px;
+  }
+
+  .homeScale .rela .desc {
+    font-size: 14px;
+  }
+
+  .scaleInfobox {
+    gap: 10px;
+  }
+
+  .homeScale .rela ul {
+    margin-top: 40px;
+  }
+
+  .homeScale .rela ul li {
+    gap: 10px;
+  }
+
+  .homeScale .rela ul li .value {
+    font-size: 24px;
+  }
+
+  .homeScale .rela ul li .label {
+    font-size: 14px;
+  }
+
+  .homeTrust {
+    padding: 40px 0;
+  }
+
+  .homeTrust .rela {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homeTrust .rela .image {
+    width: 100%;
+  }
+
+  .homeTrust .rela .cont .title {
+    font-size: 24px;
+  }
+
+  .homeTrust .rela .cont .desc {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .homeTrust .rela .cont .desc br {
+    display: none;
+  }
+
+  .homeTrust .rela .cont ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+
+  .homeTrust .rela .cont ul li {
+    gap: 20px;
+  }
+
+  .homeTrust .rela .cont ul li .rowsItem .key {
+    font-size: 18px;
+  }
+
+  .homeTrust .rela .cont ul li .rowsItem .value {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .homeTrust .rela .cont button {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 145px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .homeMethod {
+    padding: 40px 0;
+  }
+
+  .homeMethod .title {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+
+  .homeMethod .desc {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .homeMethod ul {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .homeMethod ul li:before {
+    display: none;
+  }
+
+  .homeMethod ul li .key {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .homeMethod ul li .value {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .homeQna {
+    padding: 40px 0;
+  }
+
+  .homeQna .rela {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homeQna .rela .qnaItem {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 160px 20px;
+  }
+
+  .homeQna .rela .qnaItem .title {
+    font-size: 24px;
+  }
+
+  .homeQna .rela .qnaItem img {
+    width: 250px;
+  }
+
+  .homeQna .rela ul li a {
+    padding: 20px;
+  }
+
+  .homeQna .rela ul li a .title {
+    font-size: 16px;
+  }
+
+  .homeQna .rela ul li a img {
+    right: 20px;
+    bottom: auto;
+    top: 50%;
+    margin-top: -12px;
+  }
+
+  .homeNotice {
+    padding: 40px 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .homeNotice .cont {
+    height: auto;
+  }
+
+  .homeNotice .cont .noticeLink {
+    margin-top: 20px;
+  }
+
+  .homeNotice .cont .noticeLink .title {
+    font-size: 24px;
+  }
+
+  .homeNotice .cont .noticeLink .date {
+    margin-top: 10px;
+  }
+
+  .homeNotice .cont .noticeLink .desc {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .homeNotice .image {
+    width: 100%;
+  }
+
+  .homeNotice .cont .noticeMore {
+    position: static;
+  }
+
+  .homeHelp {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .homeHelp .cate {
+    font-size: 14px;
+  }
+
+  .homeHelp .info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .homeHelp .info .description {
+    font-size: 24px;
+  }
+
+  .homeHelp .info .tel {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .homeCourtesyCar {
+    background: url(/image/bg/bg-courtesy-car-mob.png) no-repeat center bottom;
+    background-size: cover;
+  }
+  .homeMethod ul li{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 44px;
+  }
+  .homeMethod ul li .step{
+    font-size: 16px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+  }
+  .homeMethod ul li:before{
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    overflow: hidden;
+    background: #ECEDF0;
+    position: absolute;
+    left: 17px;
+    top: -85px;
+  }
+  .homeNotice .noticeMore{
+    position: static;
+    width: 115px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #03050F;
+    background: #fff;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto 0 auto;
+  }
+  .homeNotice .noticeMore span{
+    color: #03050F;
+    font-size: 16px;
+  }
+  .homeNotice .noticeMore img{
+    display: none;
+  }
+
+  .homeQna .rela ul{
+    gap: 12px;
+  }
+  .homeQna .rela ul li {
+    width: 100%;
+    height: auto;
+  }
+
+  .homeQna .rela ul li a {
+    height: auto;
+  }
+
+  .homeQna .rela ul li a .title {
+    font-size: 14px;
+    color: #03050F;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding-right: 56px;
+  }
+
+  .homeQna .rela ul li a img {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+.modalPopup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0,0,0,.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalPopup .container{
+  width: calc( 100% - 40px );
+  max-width: 660px;
+  height: auto;
+  overflow: hidden;
+  padding: 40px;
+  position: relative;
+  background: #fff;
+  border-radius: 24px;
+}
+.modalClose{
+  width: 20px;
+  height: 20px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.modalPopup .container .title{
+  margin-top: 30px;
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 600;
+}
+.modalPopup .container .description{
+  margin-top: 20px;
+  font-size: 16px;
+  color: #636779;
+  line-height: 1.5em;
+}
+
+@media (max-width: 769px) {
+  .modalPopup .container{
+    padding: 20px;
+  }
+  .modalClose{
+    right: 20px;
+    top: 20px;
+  }
+  .modalPopup .container .title{
+    font-size: 20px;
+  }
+  .modalPopup .container .description{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+
+.searchContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.searchContainer .searchForm{
+  width: 100%;
+}
+.searchContainer .searchForm .input{
+  width: 100%;
+  height: 42px;
+  border: 0;
+  border-bottom: 1px solid #03050F;
+  padding-left: 30px;
+  color: #03050F;
+  font-size: 16px;
+  background: #fff url(/image/ico/ico-search.svg) no-repeat left center;
+}
+.searchContainer .searchResult{
+  width: 100%;
+  height: auto;
+  overflow :hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid #ECEDF0;
+  border-bottom: 1px solid #ECEDF0;
+}
+.searchContainer .searchResult .areaList01{
+  width: 250px;
+  height: 410px;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #ECEDF0;
+}
+.searchContainer .searchResult .areaList01.fullType{
+  width: 100%;
+}
+.searchContainer .searchResult .areaList01 .title{
+  width: 100%;
+  height: 32px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #03050F;
+  font-weight: 600;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: #ECEDF0;
+}
+.searchContainer .searchResult .areaList01 ul{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.searchContainer .searchResult .areaList01 ul li{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.searchContainer .searchResult .areaList01 ul li a{
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 60px;
+  font-size: 18px;
+  color: #03050F;
+}
+.searchContainer .searchResult .areaList01 ul li a:hover,
+.searchContainer .searchResult .areaList01 ul li a.on{
+  font-weight: 600;
+  color: #005296;
+  background: #fff;
+}
+.searchContainer .searchResult .areaList02{
+  width: 100%;
+  flex: 1;
+  height: 410px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.searchContainer .searchResult .areaList02 ul{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.searchContainer .searchResult .areaList02 ul li{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.searchContainer .searchResult .areaList02 ul li a{
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 60px;
+  font-size: 18px;
+  color: #03050F;
+}
+.searchContainer .searchResult .areaList02 ul li a:hover{
+  background: #f1f2f4;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 769px) {
+  .searchContainer .searchResult .areaList01{
+    width: 50%;
+  }
+  .searchContainer .searchResult .areaList01 .title{
+    padding-left: 20px;
+  }
+  .searchContainer .searchResult .areaList01 ul li a{
+    height: 40px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  .searchContainer .searchResult .areaList02 ul li a{
+    height: 40px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+}

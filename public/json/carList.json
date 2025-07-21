@@ -1,0 +1,606 @@
+[
+  {
+    "manufacturer": "쉐보레",
+    "manufacturerCode": "chevrolet",
+    "id": 1,
+    "name": "스파크",
+    "year": "22년식",
+    "image": "/image/car/CHEVROLET SPARK.jpg",
+    "oilType": [
+      "G"
+    ],
+    "price": "115,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 2,
+    "name": "모닝",
+    "year": "24년식",
+    "image": "/image/car/KIA_MORNING.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "115,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 3,
+    "name": "레이",
+    "year": "23년식",
+    "image": "/image/car/KIA_RAY.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "96,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 4,
+    "name": "K5",
+    "year": "24년식",
+    "image": "/image/car/KIA_K5.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "197,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 5,
+    "name": "K8 2.5",
+    "year": "24년식",
+    "image": "/image/car/KIA_K8.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "324,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 6,
+    "name": "K8 1.6",
+    "year": "24년식",
+    "image": "/image/car/KIA_K8.png",
+    "oilType": [
+      "H"
+    ],
+    "price": "340,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 7,
+    "name": "K9 3.3",
+    "year": "22년식",
+    "image": "/image/car/KIA_K9.jpg",
+    "oilType": [
+      "G"
+    ],
+    "price": "449,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 8,
+    "name": "K9 3.8",
+    "year": "24년식",
+    "image": "/image/car/KIA_K9.jpg",
+    "oilType": [
+      "G"
+    ],
+    "price": "502,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 9,
+    "name": "카니발 9인승",
+    "year": "24년식",
+    "image": "/image/car/KIA_CARNIVAL_9.png",
+    "oilType": [
+      "D",
+      "H"
+    ],
+    "price": "336,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 10,
+    "name": "카니발 9인승 하이리무진",
+    "year": "23년식",
+    "image": "/image/car/KIA_CARNIVAL_9.png",
+    "oilType": [
+      "D",
+      "H"
+    ],
+    "price": "457,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 11,
+    "name": "니로",
+    "year": "24년식",
+    "image": "/image/car/KIA_NIRO.png",
+    "oilType": [
+      "-",
+      "H"
+    ],
+    "price": "217,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 12,
+    "name": "셀토스",
+    "year": "24년식",
+    "image": "/image/car/KIA_SELTOS.jpg",
+    "oilType": [
+      "G"
+    ],
+    "price": "217,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 13,
+    "name": "스포티지",
+    "year": "24년식",
+    "image": "/image/car/KIA_SPORTAGE.png",
+    "oilType": [
+      "D",
+      "G",
+      "H"
+    ],
+    "price": "262,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 14,
+    "name": "쏘렌토",
+    "year": "23년식",
+    "image": "/image/car/KIA_SORENTO.jpg",
+    "oilType": [
+      "D",
+      "G",
+      "H"
+    ],
+    "price": "293,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 15,
+    "name": "EV6 2WD",
+    "year": "23년식",
+    "image": "/image/car/KIA_EV6.jpg",
+    "oilType": [
+      "-"
+    ],
+    "price": "230,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 16,
+    "name": "EV6 4WD",
+    "year": "23년식",
+    "image": "/image/car/KIA_EV6.png",
+    "oilType": [
+      "-"
+    ],
+    "price": "310,000"
+  },
+  {
+    "manufacturer": "기아",
+    "manufacturerCode": "kia",
+    "id": 17,
+    "name": "EV9",
+    "year": "24년식",
+    "image": "/image/car/KIA_EV9.jpg",
+    "oilType": [
+      "-"
+    ],
+    "price": "472,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 18,
+    "name": "캐스퍼",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_CASPER.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "130,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 19,
+    "name": "아반떼",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_AVANTE.png",
+    "oilType": [
+      "G",
+      "H"
+    ],
+    "price": "143,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 20,
+    "name": "쏘나타",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_SONATA.png",
+    "oilType": [
+      "G",
+      "H"
+    ],
+    "price": "197,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 21,
+    "name": "그랜저 2.5",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GRANDEUR.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "340,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 22,
+    "name": "그랜저 3.5",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_GRANDEUR_GN7.png",
+    "oilType": [
+      "G",
+      "L"
+    ],
+    "price": "380,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 23,
+    "name": "스타렉스11&12인승",
+    "year": "21년식",
+    "image": "/image/car/HYUNDAI_STAREX_11&12.png",
+    "oilType": [
+      "D"
+    ],
+    "price": "276,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 24,
+    "name": "스타리아 11인승",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_STARIA_11.png",
+    "oilType": [
+      "D",
+      "H"
+    ],
+    "price": "313,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 25,
+    "name": "스타리아 9인승",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_STARIA_11.png",
+    "oilType": [
+      "H"
+    ],
+    "price": "368,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 26,
+    "name": "쏠라티 15인승",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_SOLATI_15.png",
+    "oilType": [
+      "D"
+    ],
+    "price": "648,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 27,
+    "name": "코나",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_KONA.png",
+    "oilType": [
+      "-",
+      "G"
+    ],
+    "price": "217,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 28,
+    "name": "투싼",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_TUCSON.png",
+    "oilType": [
+      "G",
+      "H"
+    ],
+    "price": "262,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 29,
+    "name": "싼타페",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_SANTAFE.png",
+    "oilType": [
+      "G",
+      "H"
+    ],
+    "price": "330,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 30,
+    "name": "팰리세이드",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_PALISADE.png",
+    "oilType": [
+      "D"
+    ],
+    "price": "402,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 31,
+    "name": "아이오닉5 2WD",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_IONIQ5.png",
+    "oilType": [
+      "-"
+    ],
+    "price": "230,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 32,
+    "name": "아이오닉5 4WD",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_IONIQ5.png",
+    "oilType": [
+      "-"
+    ],
+    "price": "310,000"
+  },
+  {
+    "manufacturer": "현대",
+    "manufacturerCode": "hyundai",
+    "id": 33,
+    "name": "아이오닉6",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_IONIQ6.png",
+    "oilType": [
+      "-"
+    ],
+    "price": "350,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 34,
+    "name": "G70 2.0",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G70.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "360,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 35,
+    "name": "G70 2.5",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G70.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "360,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 36,
+    "name": "G80 2.5",
+    "year": "25년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G80.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "449,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 37,
+    "name": "G80 3.5",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G80.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "502,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 38,
+    "name": "G90 3.5",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G90.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "537,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 39,
+    "name": "G90 5.0",
+    "year": "21년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G90.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "654,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 40,
+    "name": "G90 3.5 롱휠베이스",
+    "year": "23년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G90.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "710,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 41,
+    "name": "GV70",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GENESIS_GV70.png",
+    "oilType": [
+      "D",
+      "G"
+    ],
+    "price": "469,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 42,
+    "name": "GV80",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GENESIS_GV80.png",
+    "oilType": [
+      "D",
+      "G"
+    ],
+    "price": "529,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 43,
+    "name": "GV60",
+    "year": "22년식",
+    "image": "/image/car/HYUNDAI_GENESIS_GV60.png",
+    "oilType": [
+      "-"
+    ],
+    "price": "448,000"
+  },
+  {
+    "manufacturer": "제네시스",
+    "manufacturerCode": "genesis",
+    "id": 44,
+    "name": "G80",
+    "year": "24년식",
+    "image": "/image/car/HYUNDAI_GENESIS_G80.png",
+    "oilType": [
+      "-"
+    ],
+    "price": "527,000"
+  },
+  {
+    "manufacturer": "테슬라",
+    "manufacturerCode": "tesla",
+    "id": 45,
+    "name": "TESLA MODEL 3",
+    "year": "-",
+    "image": "/image/car/Tesla_Model 3.png",
+    "oilType": [
+      "E"
+    ],
+    "price": "472,000"
+  },
+  {
+    "manufacturer": "테슬라",
+    "manufacturerCode": "tesla",
+    "id": 46,
+    "name": "TESLA MODEL Y",
+    "year": "-",
+    "image": "/image/car/Tesla_Model 3.png",
+    "oilType": [
+      "E"
+    ],
+    "price": "527,000"
+  },
+  {
+    "manufacturer": "르노코리아",
+    "manufacturerCode": "renault",
+    "id": 47,
+    "name": "XM3",
+    "year": "23년식",
+    "image": "/image/car/RENAULT_XM3.png",
+    "oilType": [
+      "H"
+    ],
+    "price": "262,000"
+  },
+  {
+    "manufacturer": "르노코리아",
+    "manufacturerCode": "renault",
+    "id": 48,
+    "name": "그랑 콜레오스",
+    "year": "24년식",
+    "image": "/image/car/RENAULT_GRAND_KOLEOS.jpg",
+    "oilType": [
+      "H"
+    ],
+    "price": "293,000"
+  },
+  {
+    "manufacturer": "KGM",
+    "manufacturerCode": "kgm",
+    "id": 49,
+    "name": "토레스",
+    "year": "24년식",
+    "image": "/image/car/KG_TORRES.png",
+    "oilType": [
+      "G"
+    ],
+    "price": "234,400"
+  }
+]

@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+.main{}
+.serviceAbout {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  padding: 150px 0;
+}
+
+.serviceAbout .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.serviceAbout .container .title {
+  font-size: 48px;
+  color: #005296;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.serviceAbout .container .title strong {
+  display: block;
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.serviceAbout .container .description {
+  font-size: 16px;
+  color: #636779;
+  line-height: 1.5em;
+}
+
+.serviceAbout .image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+}
+
+.serviceAbout .image img {
+  width: 100%;
+}
+
+.serviceEvent {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #8258FE url(/image/bg/bg-service-event.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.serviceEvent .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  padding: 150px 0;
+}
+
+.serviceEvent .container .title {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+.serviceEvent .container .title strong {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+}
+
+.serviceEvent .container .description {
+  font-weight: 500;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.serviceEvent .container button {
+  width: 160px;
+  height: 58px;
+  overflow: hidden;
+  border: 0;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 65px;
+  color: #03050F;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceUse {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  padding: 150px 0;
+}
+
+.serviceUse .title {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #03050F;
+  font-weight: 700;
+}
+
+.serviceUse ul {
+  width: 100%;
+}
+
+.serviceUse ul li {
+  width: 100%;
+  margin-top: 100px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.serviceUse ul li .container {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  overflow: hidden;
+}
+
+.serviceUse ul li .container .subject {
+  font-size: 32px;
+  color: #03050F;
+  font-weight: 700;
+}
+
+.serviceUse ul li .container .description {
+  font-size: 18px;
+  color: #636779;
+  line-height: 1.5em;
+  letter-spacing: -0.36px;
+  margin-top: 40px;
+}
+
+.serviceUse ul li .container button {
+  width: 196px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 18px;
+  color: #03050F;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.serviceUse .image {
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+}
+
+.serviceUse .image img {
+  width: 100%;
+  float: left;
+}
+
+.serviceCustomer {
+  max-width: 1400px;
+  margin: 150px auto;
+  width: calc(100% - 40px);
+  background: linear-gradient(97deg, #4EBBC7 1.2%, #2FA9B6 100%);
+  overflow: hidden;
+  height: auto;
+  border-radius: 30px;
+  padding: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+
+}
+.serviceCustomer:before{
+  content: "";
+  display: block;
+  width: 422px;
+  height: 337px;
+  overflow: hidden;
+  background: url(/image/ico/ico-gift.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 141px;
+  top: 63px;
+}
+
+.serviceCustomer .container {
+  width: 100%;
+  flex: 1;
+  height: auto;
+  overflow: hidden;
+}
+
+.serviceCustomer .container .title {
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.serviceCustomer .container .description {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5em;
+  margin-top: 30px;
+}
+
+.serviceCustomer .container .etc {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5em;
+  margin-top: 100px;
+  letter-spacing: -0.48px;
+}
+
+.serviceCustomer button {
+  width: 252px;
+  height: 74px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #03050F;
+  font-weight: 600;
+}
+
+.serviceContactus {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: url(/image/bg/bg-service-contactus.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.serviceContactus .container {
+  max-width: 1400px;
+  margin: 150px auto;
+  width: calc(100% - 40px);
+  position: relative;
+}
+
+.serviceContactus .container .title {
+  width: 100%;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.serviceContactus .container .tel {
+  width: 100%;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+
+.serviceContactus .container button {
+  width: 225px;
+  height: 74px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #03050F;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+  .serviceAbout {
+    padding: 100px 0 50px 0;
+  }
+
+  .serviceAbout .container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .serviceAbout .container .title {
+    font-size: 28px;
+  }
+
+  .serviceAbout .container .title strong {
+    font-size: 28px;
+  }
+
+  .serviceAbout .container .description {
+    font-size: 16px;
+    color: #636779;
+    line-height: 1.5em;
+  }
+
+  .serviceAbout .image {
+    margin-top: 40px;
+  }
+
+  .serviceEvent {
+    padding: 20px;
+    background: #8258FE url(/image/bg/bg-service-event-mob.jpg) no-repeat center bottom;
+    background-size: cover;
+    height: 400px;
+  }
+
+  .serviceEvent .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .serviceEvent .container .title {
+    font-size: 20px;
+  }
+
+  .serviceEvent .container .title strong {
+    font-size: 20px;
+  }
+
+  .serviceEvent .container .description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .serviceEvent .container button {
+    width: 184px;
+    height: 56px;
+    margin: 180px auto 0 auto;
+    font-size: 16px;
+  }
+
+  .serviceUse {
+    padding: 100px 0 0 0;
+  }
+
+  .serviceUse .title {
+    font-size: 24px;
+  }
+
+  .serviceUse ul {
+    width: 100%;
+  }
+
+  .serviceUse ul li {
+    margin-top: 50px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .serviceUse ul li .container {
+    width: 100%;
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .serviceUse ul li .container .subject {
+    font-size: 20px;
+  }
+
+  .serviceUse ul li .container .description {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .serviceUse ul li .container button {
+    width: 163px;
+    height: 44px;
+    font-size: 16px;
+    color: #03050F;
+    margin-top: 20px;
+  }
+
+  .serviceUse .image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .serviceUse .image img {
+    width: 100%;
+    float: left;
+  }
+
+  .serviceCustomer {
+    margin: 100px auto;
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  }
+  .serviceCustomer:before{
+    content: "";
+    display: block;
+    width: 254px;
+    height: 204px;
+    overflow: hidden;
+    background: url(/image/ico/ico-gift.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -91px;
+    top: auto;
+    bottom: -44px;
+  }
+  .serviceCustomer .container .title {
+    font-size: 24px;
+  }
+
+  .serviceCustomer .container .description {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .serviceCustomer .container .description br{
+    display: none;
+  }
+
+  .serviceCustomer .container .etc {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .serviceCustomer button {
+    width: 172px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .serviceContactus {
+    height: 364px;
+    background: url(/image/bg/bg-service-contactus-mob.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .serviceContactus .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .serviceContactus .container .title {
+    font-size: 18px;
+  }
+
+  .serviceContactus .container .tel {
+    font-size: 40px;
+    margin-top: 8px;
+  }
+
+
+  .serviceContactus .container button {
+    width: 172px;
+    height: 50px;
+    margin: 50px auto 0 auto;
+    font-size: 16px;
+    position: static;
+  }
+}

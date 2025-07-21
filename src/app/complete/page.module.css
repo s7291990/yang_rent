@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+.main{
+  width: 100%;
+  padding: 150px 0;
+  background: #ECEDF0;
+}
+
+.completeContainer{
+  width: 520px;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 40px;
+}
+.completeContainer .completeHeader{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.completeContainer .completeHeader .completeTitle{
+  font-size: 32px;
+  font-weight: 700;
+  color: #03050F;
+}
+.completeContainer .completeHeader .completeDesc{
+  font-size: 14px;
+  color: #636779;
+}
+.completeContainer .subject{
+  width: 100%;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #03050F;
+}
+.completeContainer .carInfo{
+  width: 100%;
+  margin-top: 30px;
+  height: 60px;
+  background: #F4F4F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 20px;
+}
+.completeContainer .carInfo .key{
+  font-size: 16px;
+  color: #636779;
+}
+.completeContainer .carInfo .value{
+  font-size: 18px;
+  color: #03050F;
+  font-weight: 500;
+}
+.completeContainer dl{
+  width: 100%;
+  margin-top: 50px;
+}
+.completeContainer dl dt{
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  color:#03050F;
+}
+.completeContainer dl dd{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.completeContainer dl dd + dt{
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #ECEDF0;
+}
+.completeContainer dl dd ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.completeContainer dl dd ul li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.completeContainer dl dd ul li .key{
+  font-size: 16px;
+  color: #636779;
+  line-height: 1.3em;
+}
+.completeContainer dl dd ul li .value{
+  font-size: 16px;
+  color: #03050F;
+  font-weight: 500;
+  text-align: right;
+  line-height: 1.3em;
+}
+.completeContainer .totalInfo{
+  width: 100%;
+  border-top: 1px solid #C4C6D1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+.completeContainer .totalInfo .key{
+  font-size: 18px;
+  color: #636779;
+}
+.completeContainer .totalInfo .value{
+  font-size: 24px;
+  font-weight: 700;
+  color: #03050F;
+}
+.btnHome{
+  width: 100%;
+  height: 74px;
+  border-radius: 6px;
+  border: 0;
+  background: #005296;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 769px) {
+  .main{
+    padding: 40px 20px;
+  }
+  .completeContainer{
+    width: 100%;
+    padding: 20px;
+  }
+  .completeContainer .completeHeader .completeTitle{
+    font-size: 24px;
+  }
+  .completeContainer .subject{
+    margin-top: 20px;
+  }
+  .completeContainer .carInfo{
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 45px;
+  }
+  .completeContainer .carInfo .key{
+    font-size: 14px;
+  }
+  .completeContainer .carInfo .value{
+    font-size: 14px;
+  }
+  .completeContainer dl{
+    margin-top: 20px;
+  }
+  .completeContainer dl dt{
+    font-size: 16px;
+  }
+  .completeContainer dl dd{
+    margin-top: 20px;
+  }
+  .completeContainer dl dd + dt{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .completeContainer dl dd ul{
+    gap: 10px;
+  }
+  .completeContainer dl dd ul li .key{
+    font-size: 14px;
+  }
+  .completeContainer dl dd ul li .value{
+    font-size: 14px;
+  }
+  .completeContainer .totalInfo{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .completeContainer .totalInfo .key{
+    font-size: 16px;
+  }
+  .completeContainer .totalInfo .value{
+    font-size: 20px;
+  }
+  .btnHome{
+    display: flex;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+.subVisual{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  height: 320px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: url(/image/bg/bg-sub-header.jpg) no-repeat center top;
+  background-size: cover;
+}
+.subVisual .title{
+  position: absolute;
+  left: 140px;
+  top: 80px;
+  font-size: 64px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.noticeWrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: calc( 100% - 40px );
+  padding: 150px 0 0 0;
+}
+.noticeWrapper table{
+  width:100%;
+  table-layout:fixed;
+  border:0;
+  border-collapse:collapse;
+}
+.noticeWrapper table th{
+  height: 50px;
+  border-top: 1px solid #03050F;
+  text-align: center;
+  font-size: 16px;
+  color: #03050F;
+  font-weight: 500;
+}
+.noticeWrapper table td{
+  height: 50px;
+  border-top: 1px solid #03050F;
+  text-align: center;
+  font-size: 16px;
+  color: #03050F;
+  font-weight: 500;
+  border-bottom: 1px solid #D6DCE0;
+  vertical-align: middle;
+ }
+.noticeWrapper table td.al{
+  text-align: left;
+  padding: 0 10px;
+}
+.noticeWrapper table td a{
+  font-size: 16px;
+  color: #03050F;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+  vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+  .subVisual{
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .subVisual .title{
+    left: 20px;
+    top: 20px;
+    font-size: 34px;
+  }
+  .subVisual{
+    height: 185px;
+    background: linear-gradient(101deg, #0070CC 1.22%, #005296 45.01%);
+  }
+  .subVisual:before{
+    content: "";
+    width: 100%;
+    height: 610px;
+    overflow: hidden;
+    display: block;
+    background: url(/image/bg/bg-sub-header-mob.png) no-repeat center top;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+  }
+  .noticeWrapper{
+    padding: 40px 0;
+  }
+  .mhide{
+    display: none;
+  }
+  .noticeWrapper table td,
+  .noticeWrapper table th{
+    font-size: 14px;
+  }
+  .noticeWrapper table td a{
+    font-size: 14px;
+  }
+}

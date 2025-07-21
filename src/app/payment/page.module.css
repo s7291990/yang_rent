@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+.main{
+  width: 100%;
+  padding: 150px 0;
+  background: #ECEDF0;
+}
+
+.paymentContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.paymentForm{
+  width: 810px;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+}
+.paymentForm .title{
+  width: 100%;
+  font-size: 32px;
+  color: #03050F;
+  font-weight: 600;
+}
+.paymentForm .carContainer{
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.paymentForm .carContainer .carImage{
+  width: 320px;
+  height: 196px;
+  overflow: hidden;
+}
+.paymentForm .carContainer .carImage img{
+  width: 100%;
+  object-fit: cover;
+}
+.carCont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.paymentForm .carContainer .carInfo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.paymentForm .carContainer .carInfo .carName{
+  font-size: 20px;
+  color: #03050F;
+  font-weight: 600;
+}
+.paymentForm .carContainer .carInfo .carType{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  padding:0 10px;
+  border-radius: 8px;
+  background: #636779;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.paymentForm .carContainer .carCont ul{
+  width: 100%;
+  margin-top: 24px;
+  height: auto;
+  overflow: hidden;
+  background: #F4F4F4;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+}
+.paymentForm .carContainer .carCont ul li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paymentForm .carContainer .carCont ul li .key{
+  font-size: 16px;
+  color: #636779;
+}
+.paymentForm .carContainer .carCont ul li .value{
+  font-size: 16px;
+  color: #03050F;
+  font-weight: 500;
+}
+
+.formContainer{
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.formContainer + .formContainer{
+  border-top: 1px solid #ECEDF0;
+  padding-top: 40px;
+}
+.formContainer .formHeader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formContainer .formHeader .subject{
+  font-size: 20px;
+  color: #03050F;
+  font-weight: 600;
+}
+.formContainer .formHeader .desc{
+  font-size: 14px;
+  color: #636779;
+}
+.formContainer .formBody{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.formContainer .formBody .formItem{
+  width: calc( 50% - 10px );
+  flex: initial;
+}
+.deliveryGroup{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.formContainer .formBody .btnDelivery{
+  width: 100%;
+  flex: 1;
+  height: 85px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid #C4C6D1;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  background: #fff;
+}
+.formContainer .formBody .btnDelivery .title{
+  font-size: 16px;
+  color: #03050F;
+  font-weight: 600;
+}
+.formContainer .formBody .btnDelivery .desc{
+  font-size: 13px;
+  color: #636779;
+}
+.formContainer .formBody .btnDelivery.on{
+  border: 1px solid #005296;
+  background: #EAF5FF;
+}
+.formContainer .btnCertification{
+  width: 115px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 0;
+  background: #005296;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.paymentReulst{
+  width: 430px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reulstContainer{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  padding: 40px;
+}
+.paymentReulst .title{
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  color: #03050F;
+}
+.paymentReulst ul{
+  width: 100%;
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.paymentReulst ul + ul{
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #ECEDF0;
+}
+.paymentReulst ul li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.paymentReulst ul li .key{
+  line-height: 1.3em;
+  font-size: 16px;
+  color: #636779;
+}
+.paymentReulst ul li .value{
+  font-size: 16px;
+  font-weight: 500;
+  color: #03050F;
+  text-align: right;
+}
+.paymentReulst .totalInfo{
+  width: 100%;
+  border-top: 1px solid #C4C6D1;
+  margin-top: 24px;
+  padding-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paymentReulst .totalInfo .key{
+  font-size: 18px;
+  color: #636779;
+}
+.paymentReulst .totalInfo .value{
+  font-size: 24px;
+  color: #03050F;
+  font-weight: 700;
+}
+
+.btnPayment{
+  width: 100%;
+  height: 74px;
+  border-radius: 24px;
+  border: 0;
+  background: #005296;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.titleMob{
+  display: none;
+}
+.paymentContainer .btnPayment.nextButton{
+  display: none;
+}
+@media (max-width: 1200px) {
+  .main{
+    padding: 150px 20px;
+  }
+  .paymentContainer{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .paymentForm{
+    width: 100%;
+  }
+  .paymentReulst{
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .main{
+    padding: 40px 20px;
+  }
+  .paymentForm{
+    padding: 20px;
+  }
+  .paymentForm .title{
+    font-size: 24px;
+  }
+  .paymentForm .carContainer{
+    margin-top: 20px;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .paymentForm .carContainer .carImage{
+    width: 100%;
+    height: auto;
+  }
+  .paymentForm .carContainer .carInfo{
+    gap: 10px;
+  }
+  .paymentForm .carContainer .carInfo .car-name{
+    font-size: 16px;
+  }
+  .paymentForm .carContainer .carInfo .car-type{
+
+  }
+  .paymentForm .carContainer .carCont ul{
+    margin-top: 10px;
+
+  }
+  .paymentForm .carContainer .carCont ul li .key{
+    font-size: 14px;
+  }
+  .paymentForm .carContainer .carCont ul li .value{
+    font-size: 14px;
+  }
+  .formContainer{
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .formContainer + .formContainer{
+    padding-top: 20px;
+  }
+  .formContainer .formHeader{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .formContainer .formHeader .subject{
+    font-size: 20px;
+  }
+  .formContainer .formBody .formItem{
+    width: 100%;
+  }
+  .deliveryGroup{
+    gap: 10px;
+    flex-direction: column;
+  }
+  .formContainer .formBody .btnDelivery .title{
+    font-size: 14px;
+  }
+  .formContainer .formBody .btnDelivery{
+    gap: 8px;
+    height: 120px;
+    padding: 10px;
+  }
+  .paymentReulst{
+    width: 100%;
+  }
+
+  .reulstContainer{
+    padding: 20px;
+  }
+  .paymentReulst .title{
+    font-size: 20px;
+  }
+  .paymentReulst ul{
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .paymentReulst ul + ul{
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .paymentReulst ul li .key{
+    font-size: 14px;
+  }
+  .paymentReulst ul li .value{
+    font-size: 14px;
+  }
+  .paymentReulst .totalInfo{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .paymentReulst .totalInfo .key{
+    font-size: 16px;
+  }
+  .paymentReulst .totalInfo .value{
+    font-size: 20px;
+  }
+  .btnPayment{
+    height: 50px;
+    font-size: 18px;
+  }
+  .titleMob{
+    display: block;
+  }
+  .titleMob button{
+    padding: 0;
+    background: transparent;
+    border: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+  .titleMob button img{
+
+  }
+  .titleMob button span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #03050F;
+  }
+  .paymentContainer .btnPayment.nextButton{
+    display: flex;
+  }
+  .paymentContainer .btnPayment{
+    border-radius: 6px;
+  }
+  .paymentContainer .paymentForm{
+    display: block;
+  }
+  .paymentContainer .paymentReulst{
+    display: none;
+  }
+  .paymentContainer .paymentFormTitle{
+    display: block;
+  }
+  .paymentContainer .reulstTitle{
+    display: none;
+  }
+  .paymentContainer.result .paymentForm{
+    display: none;
+  }
+  .paymentContainer.result .paymentReulst{
+    display: flex;
+  }
+  .paymentContainer.result .paymentFormTitle{
+    display: none;
+  }
+  .paymentContainer.result .reulstTitle{
+    display: block;
+  }
+  .paymentContainer.result .btnPayment.nextButton {
+    display: none;
+  }
+  .paymentForm .title{
+    display: none;
+  }
+}
