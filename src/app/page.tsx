@@ -13,7 +13,7 @@ import { useSms } from '@/feature/common/sms/helper/useSms';
 import { useQuickReservationStore } from '@/feature/quickReservation/store';
 import { useRouter } from 'next/navigation';
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const onPlayerReady: YouTubeProps['onReady'] = (event) => {

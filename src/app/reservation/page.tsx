@@ -12,7 +12,7 @@ import moment from 'moment';
 
 // 결제 정보
 
-export default function page() {
+export default function Page() {
   // 초기 날짜 설정
   useEffect(() => {
     // 이미 값이 있으면 덮어쓰지 않음 (원하면 조건문 제거)

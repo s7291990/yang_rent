@@ -4,7 +4,7 @@ import styles from './page.module.css';
 import { useRouter } from 'next/navigation';
 import { useNoticeViewStore } from '@/feature/notice/store';
 
-export default function page() {
+export default function Page() {
   const noticeView = useNoticeViewStore((state) => state.NoticeView);
 
   const router = useRouter();

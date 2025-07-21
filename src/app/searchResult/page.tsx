@@ -13,7 +13,7 @@ import { getDateTimeDiff } from '@/feature/payment/helper';
 // 결제 정보
 import { usePaymentStore } from '@/feature/payment/store';
 
-export default function page() {
+export default function Page() {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
   const { searchForm, setSearchForm } = useSearchFormStore();

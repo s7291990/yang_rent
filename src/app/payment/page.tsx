@@ -19,7 +19,7 @@ import { fetchRentList } from '@/feature/payment/controller';
 import moment from 'moment';
 import 'moment/locale/ko';
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const nowTime = moment().format('YYYY.MM.DD');
 

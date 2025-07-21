@@ -10,7 +10,7 @@ import { useNoticeListStore, useNoticeViewStore } from '@/feature/notice/store';
 import { Loading } from '@/components/common';
 import { tr } from 'date-fns/locale';
 
-export default function page() {
+export default function Page() {
   const [loading, setLoading] = useState(true);
   const notices = useNoticeListStore((state) => state.NoticeList);
 
