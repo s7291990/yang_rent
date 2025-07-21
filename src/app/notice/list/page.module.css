@@ -9,7 +9,7 @@
   height: 320px;
   border-radius: 40px;
   overflow: hidden;
-  background: url(/image/bg/bg-sub-header.jpg) no-repeat center top;
+  background: url(/image/bg/bg-sub-notice.jpg) no-repeat center top;
   background-size: cover;
 }
 .subVisual .title{
@@ -77,27 +77,21 @@
 
 @media (max-width: 768px) {
   .subVisual .title{
-    left: 20px;
-    top: 20px;
-    font-size: 34px;
+    font-size: 24px;
+    color: #03050F;
+    position: static;
+    padding-left: 20px;
+    padding-top: 80px;
   }
   .subVisual{
-    height: 185px;
-    background: linear-gradient(101deg, #0070CC 1.22%, #005296 45.01%);
+    height: auto;
+    background: #fff;
   }
   .subVisual:before{
-    content: "";
-    width: 100%;
-    height: 610px;
-    overflow: hidden;
-    display: block;
-    background: url(/image/bg/bg-sub-header-mob.png) no-repeat center top;
-    background-size: contain;
-    position: absolute;
-    left: 0;
+    display: none;
   }
   .noticeWrapper{
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   .mhide{
     display: none;

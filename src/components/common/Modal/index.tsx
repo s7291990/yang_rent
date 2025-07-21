@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.css';
+
 interface ModalProps {
   title?: string;
   children?: React.ReactNode;

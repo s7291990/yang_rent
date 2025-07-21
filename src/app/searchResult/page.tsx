@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
-import { SearchForm, FormItem, FormSelect, CarItem, Loading } from '@/components/common';
+import { CarItem, FormItem, FormSelect, Loading, SearchForm } from '@/components/common';
 import { fetchCar } from '@/feature/searchResult/controller';
 import { Car } from '@/feature/searchResult/model';
 import { useCarsStore, useSearchFormStore } from '@/feature/searchResult/store';
@@ -12,7 +12,6 @@ import { getDateTimeDiff } from '@/feature/payment/helper';
 
 // 결제 정보
 import { usePaymentStore } from '@/feature/payment/store';
-import { PaymentDto } from '@/feature/payment/model';
 
 export default function page() {
   const [loading, setLoading] = useState(true);

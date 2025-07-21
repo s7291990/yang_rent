@@ -1,12 +1,6 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './page.module.css';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import Pagination, { PaginationProps } from '@/components/common/Pagination';
-import { fetchNoticeList } from '@/feature/notice/controller';
-import { NoticeRdo } from '@/feature/notice/model';
-import { useNoticeListStore, useNoticeViewStore } from '@/feature/notice/store';
 
 export default function page() {
   return (

@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './index.module.css';
-import clsx from 'clsx';
-import Link from 'next/link';
 
 interface InputProps {
   title?: string;
@@ -12,14 +10,7 @@ interface InputProps {
   onClick?: () => void;
 }
 
-export default function index({
-  title = '',
-  desc,
-  image = '',
-  name,
-  car,
-  onClick,
-}: InputProps) {
+export default function index({ title = '', desc, image = '', name, car, onClick }: InputProps) {
   return (
     <div className={styles.reviewItem} onClick={onClick}>
       <div className={styles.subject}>{title}</div>

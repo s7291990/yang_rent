@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
-import clsx from 'clsx';
 import Contact from '@/components/common/Contact';
 
 export default function index() {

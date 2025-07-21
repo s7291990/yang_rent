@@ -50,9 +50,7 @@ export default function index({
   const carList01 = Array.from(new Set(car.map((item) => item.manufacturer)));
 
   // areaList02: 선택된 시/도의 시/군/구 목록
-  const carList02 = selectedCar
-    ? car.filter((item) => item.manufacturer === selectedCar)
-    : [];
+  const carList02 = selectedCar ? car.filter((item) => item.manufacturer === selectedCar) : [];
 
   // 과실여부 목록
   const negligenceList01 = negligence.map((item) => item.negligence);
@@ -161,10 +159,12 @@ export default function index({
               <ul>
                 {areaList02.map((sigungu) => (
                   <li key={sigungu}>
-                    <Link href="#" onClick={(e) => {
-                      e.preventDefault();
-                      handleSigunguClick(sigungu);
-                    }}
+                    <Link
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleSigunguClick(sigungu);
+                      }}
                     >
                       {sigungu}
                     </Link>
@@ -199,10 +199,12 @@ export default function index({
               <ul>
                 {carList02.map((car, index) => (
                   <li key={index}>
-                    <Link href="#" onClick={(e) => {
-                      e.preventDefault();
-                      handleCarClick(car.name);
-                    }}
+                    <Link
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleCarClick(car.name);
+                      }}
                     >
                       {car.name}
                     </Link>

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './page.module.css';
-import { useSession, signIn, signOut } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 export default function page() {
@@ -17,9 +17,7 @@ export default function page() {
       <div className={styles.loginContainer}>
         <div className={styles.loginForm}>
           <div className={styles.loginTitle}>회원가입</div>
-          <div className={styles.loginDesc}>
-            SNS로 간편하게 회원가입이 가능합니다
-          </div>
+          <div className={styles.loginDesc}>SNS로 간편하게 회원가입이 가능합니다</div>
           <div className={styles.loginFormItem}>
             <button type="button" className={styles.btnKakao} onClick={() => signIn('kakao')}>
               <img src="/image/ico/ico-login-kakao.svg" />

@@ -1,8 +1,8 @@
 'use client';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
-import { FormItem, FormSelect, SearchForm, ReviewContainer, Loading } from '@/components/common';
+import { FormItem, FormSelect, Loading, ReviewContainer, SearchForm } from '@/components/common';
 import { CourTesy } from '@/components/home';
 import CountUp from '@/feature/home/helper/CountUp';
 import clsx from 'clsx';
@@ -11,7 +11,6 @@ import { fetchNotice } from '@/feature/home/controller';
 import { useNoticeStore } from '@/feature/home/store';
 import { useSms } from '@/feature/common/sms/helper/useSms';
 import { useQuickReservationStore } from '@/feature/quickReservation/store';
-import { QuickReservationDto } from '@/feature/quickReservation/model';
 import { useRouter } from 'next/navigation';
 
 export default function page() {

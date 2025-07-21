@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styles from './page.module.css';
 import { fetchCompletes } from '@/feature/complete/controller';
 import { useCompleteStore } from '@/feature/complete/store';

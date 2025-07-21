@@ -1,8 +1,7 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './page.module.css';
 import { useRouter } from 'next/navigation';
-import { NoticeRdo } from '@/feature/notice/model';
 import { useNoticeViewStore } from '@/feature/notice/store';
 
 export default function page() {
@@ -21,9 +20,12 @@ export default function page() {
       <div className={styles.detailWrapper}>
         <div className={styles.detailTitle}>{noticeView?.title}</div>
         <div className={styles.detailDate}>{noticeView?.date}</div>
-        <div className={styles.detailContent} dangerouslySetInnerHTML={{
-          __html: noticeView?.description?.replace(/\n/g, '<br />') || '',
-        }}></div>
+        <div
+          className={styles.detailContent}
+          dangerouslySetInnerHTML={{
+            __html: noticeView?.description?.replace(/\n/g, '<br />') || '',
+          }}
+        ></div>
         <button
           type="button"
           className={styles.detailButton}

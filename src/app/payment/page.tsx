@@ -6,15 +6,15 @@ import { useRouter } from 'next/navigation';
 
 import { useSms } from '@/feature/common/sms/helper/useSms';
 import { usePaymentStore, useRentListStore } from '@/feature/payment/store';
-import { PaymentDto, RentRdo } from '@/feature/payment/model';
+import { RentRdo } from '@/feature/payment/model';
 import clsx from 'clsx';
 import AddressSearch from '@/components/common/AddressSearch';
 import {
-  getDayOfWeek,
   getDateTimeDiff,
-  toMonthDay,
+  getDayOfWeek,
   requestKcpIdentityVerification,
   requestSmartroPayment,
+  toMonthDay,
 } from '@/feature/payment/helper';
 import { fetchRentList } from '@/feature/payment/controller';
 
@@ -287,6 +287,28 @@ export default function page() {
               />
             </div>
           </div>
+
+          <div className={styles.formContainer}>
+            <div className={styles.formHeader}>
+              <div className={styles.subject}>쿠폰</div>
+            </div>
+
+            <div className={styles.formBody}>
+              <div className={styles.couponContainer}>
+                <FormItem
+                  className={styles.formItem}
+                  label="쿠폰번호"
+                  placeholder=""
+                  type="text"
+                  value={Payment.customerName}
+                  readonly={true}
+                />
+                <button type="button" className={styles.couponButton}>
+                  적용하기
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <button
@@ -323,9 +345,9 @@ export default function page() {
                 <div className={styles.key}>이용 기간</div>
                 <div className={styles.value}>
                   {!Payment.startDate &&
-                    !Payment.startTime &&
-                    !Payment.endDate &&
-                    !Payment.endTime ? (
+                  !Payment.startTime &&
+                  !Payment.endDate &&
+                  !Payment.endTime ? (
                     <>로딩 중...</>
                   ) : isReady ? (
                     <>
@@ -385,17 +407,24 @@ export default function page() {
               </li>
             </ul>
 
+            <ul>
+              <li>
+                <div className={styles.key}>올림포스 채널 추가 50% 할인</div>
+                <div className={styles.value}>-{Payment.delivery.toLocaleString() || 0}원</div>
+              </li>
+              <li>
+                <div className={styles.key}>지니TV 쿠폰 등록 10% 할인</div>
+                <div className={styles.value}>-{Payment.cdwAge.toLocaleString() || 0}원</div>
+              </li>
+            </ul>
+
             <div className={styles.totalInfo}>
               <div className={styles.key}>총 결제 금액</div>
               <div className={styles.value}>{Payment.totalPrice.toLocaleString()}원</div>
             </div>
           </div>
 
-          <button
-            type="button"
-            className={styles.btnPayment}
-            onClick={handleSavePayment}
-          >
+          <button type="button" className={styles.btnPayment} onClick={handleSavePayment}>
             {Payment.totalPrice.toLocaleString()}원 결제하기
           </button>
         </div>

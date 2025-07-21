@@ -1,15 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import styles from './index.module.css';
 import clsx from 'clsx';
-import { Calendar, DateRange } from 'react-date-range';
-import { addDays } from 'date-fns';
-import { ko } from 'date-fns/locale';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
-import { TimePicker } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
-import moment from 'moment';
-import { isMobile } from 'react-device-detect';
 
 interface InputProps {
   label?: string;

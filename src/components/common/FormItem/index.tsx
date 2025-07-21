@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, forwardRef } from 'react';
+import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import styles from './index.module.css';
 import clsx from 'clsx';
 import { Calendar, DateRange } from 'react-date-range';
@@ -30,22 +30,25 @@ interface InputProps {
   required?: boolean;
 }
 
-const FormItem = forwardRef<HTMLInputElement, InputProps>(function FormItem({
-  label = ' ',
-  className,
-  placeholder = '이름을 입력하세요',
-  value,
-  endValue,
-  onChange,
-  onChangeEnd,
-  name,
-  dataType,
-  type = 'text',
-  readonly = false,
-  maxLength,
-  onClick,
-  required,
-}, ref) {
+const FormItem = forwardRef<HTMLInputElement, InputProps>(function FormItem(
+  {
+    label = ' ',
+    className,
+    placeholder = '이름을 입력하세요',
+    value,
+    endValue,
+    onChange,
+    onChangeEnd,
+    name,
+    dataType,
+    type = 'text',
+    readonly = false,
+    maxLength,
+    onClick,
+    required,
+  },
+  ref,
+) {
   const calendarRef = useRef<HTMLDivElement>(null);
   const [date, setDate] = useState<Date | null>(null);
   const [showCalendar, setShowCalendar] = useState(false);
@@ -54,12 +57,12 @@ const FormItem = forwardRef<HTMLInputElement, InputProps>(function FormItem({
   const formatDate = (date: Date | null) =>
     date
       ? date
-        .toLocaleDateString('ko-KR', {
-          year: 'numeric',
-          month: '2-digit',
-          day: '2-digit',
-        })
-        .replace(/\.\s*$/, '')
+          .toLocaleDateString('ko-KR', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+          })
+          .replace(/\.\s*$/, '')
       : '';
 
   const formatDate01 = (date: Date | null, format: string = 'YYYY-MM-DD') => {
@@ -226,7 +229,7 @@ const FormItem = forwardRef<HTMLInputElement, InputProps>(function FormItem({
           {dataType === 'timepicker' && (
             <TimePicker
               format="HH:mm"
-              hideHours={hour => hour < 10 || hour > 16}
+              hideHours={(hour) => hour < 10 || hour > 16}
               onChange={(value: Date | null) => {
                 if (value) {
                   const hour = value.getHours();

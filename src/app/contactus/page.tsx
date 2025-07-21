@@ -7,26 +7,25 @@ import { FormItem, FormTextarea } from '@/components/common';
 export default function page() {
   const router = useRouter();
 
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
   const [result, setResult] = useState<string | null>(null);
 
-
   const handleSubmit = async () => {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, phone, message }),
     });
     const data = await res.json();
     if (data.success === true) {
-      alert("메일이 성공적으로 전송되었습니다!");
-      setName("");
-      setPhone("");
-      setMessage("");
+      alert('메일이 성공적으로 전송되었습니다!');
+      setName('');
+      setPhone('');
+      setMessage('');
     } else {
-      alert("메일 전송에 실패했습니다.");
+      alert('메일 전송에 실패했습니다.');
     }
   };
 
@@ -40,7 +39,7 @@ export default function page() {
       {/** 목록 상세 영역 */}
       <div className={styles.contactusWrapper}>
         <div className={styles.rela}>
-          <div className={styles.title}>Contact Us</div>
+          <div className={styles.title}>지금 바로 문의해 보세요</div>
           <div className={styles.formWrapper}>
             <FormItem
               label="성함"
@@ -49,7 +48,7 @@ export default function page() {
               name="name"
               required={true}
               value={name}
-              onChange={e => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
             <FormItem
               label="휴대폰 번호"
@@ -59,7 +58,7 @@ export default function page() {
               required={true}
               value={phone}
               maxLength={13}
-              onChange={(e) => {
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 let value = e.target.value.replace(/[^0-9]/g, ''); // 숫자만 허용
                 // 자동 하이픈 처리
                 if (value.length < 4) {
@@ -69,7 +68,7 @@ export default function page() {
                 } else {
                   value = value.replace(/(\d{3})(\d{4})(\d{0,4})/, '$1-$2-$3');
                 }
-                setPhone(e.target.value)
+                setPhone(value);
               }}
             />
             <FormTextarea
@@ -78,7 +77,7 @@ export default function page() {
               name="name"
               required={true}
               value={message}
-              onChange={e => setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <button type="button" className={styles.detailButton} onClick={handleSubmit}>
               문의하기

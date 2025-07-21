@@ -53,5 +53,7 @@
 }
 
 @media (max-width: 768px) {
-
+  .detailWrapper{
+    padding: 80px 0;
+  }
 }

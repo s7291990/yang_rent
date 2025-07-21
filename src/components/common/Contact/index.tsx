@@ -50,18 +50,25 @@ export default function Contact({ isContactOpen, onClose }: ContactProps) {
     setContact({ ...Contact }); // 필요시 추가 가공 가능
     console.log(Contact);
     // 고객
-    sendSms(Contact.phone, `${Contact.name}고객님, 사고대차 문의가 정상 접수되었습니다.
+    sendSms(
+      Contact.phone,
+      `${Contact.name}고객님, 사고대차 문의가 정상 접수되었습니다.
       \n▶ 문의 내용:
       \nㆍ문의자: ${Contact.name}/${Contact.phone}
       \nㆍ사고차량: ${Contact.carNumber}
       \nㆍ운전자 나이: 만${Contact.age}세 이상
-      \n빠른 차량 배정을 위해 담당자가 곧 연락드리겠습니다.`)
+      \n빠른 차량 배정을 위해 담당자가 곧 연락드리겠습니다.`,
+    );
     // 운영자
-    sendSms(process.env.NEXT_PUBLIC_ADMIN_PHONE, `[사고대차예약] 도착했습니다.
+    sendSms(
+      process.env.NEXT_PUBLIC_ADMIN_PHONE,
+      `[사고대차예약] 도착했습니다.
       \n▶ 문의 내용:
       \nㆍ문의자: ${Contact.name}/${Contact.phone}
       \nㆍ사고차량: ${Contact.carNumber}
-      \nㆍ운전자 나이: 만${Contact.age}세 이상`, false)
+      \nㆍ운전자 나이: 만${Contact.age}세 이상`,
+      false,
+    );
     if (onClose) onClose(); // 저장 후 모달 닫기
   };
 

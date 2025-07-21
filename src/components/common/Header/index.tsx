@@ -4,10 +4,9 @@ import styles from './index.module.css';
 import Link from 'next/link';
 import clsx from 'clsx';
 import Contact from '@/components/common/Contact';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
-import { useSession, signIn, signOut } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import { signOut, useSession } from 'next-auth/react';
 
 export default function index() {
   const [totalMenu, setTotalMenu] = useState<boolean>(false);
@@ -43,7 +42,10 @@ export default function index() {
 
           <ul className={styles.navMenu}>
             <li className={styles.navItem} data-menu="company">
-              <Link href="/reservation" className={clsx(styles.navLink, { [styles.active]: pathname === '/reservation' })}>
+              <Link
+                href="/reservation"
+                className={clsx(styles.navLink, { [styles.active]: pathname === '/reservation' })}
+              >
                 단기렌트 서비스
               </Link>
             </li>
@@ -53,17 +55,26 @@ export default function index() {
               </Link>
             </li>
             <li className={styles.navItem} data-menu="careers">
-              <Link href="/service" className={clsx(styles.navLink, { [styles.active]: pathname === '/service' })}>
+              <Link
+                href="/service"
+                className={clsx(styles.navLink, { [styles.active]: pathname === '/service' })}
+              >
                 서비스 안내
               </Link>
             </li>
             <li className={styles.navItem} data-menu="news">
-              <Link href="/contactus" className={clsx(styles.navLink, { [styles.active]: pathname === '/contactus' })}>
+              <Link
+                href="/contactus"
+                className={clsx(styles.navLink, { [styles.active]: pathname === '/contactus' })}
+              >
                 고객센터
               </Link>
             </li>
             <li className={styles.navItem} data-menu="news">
-              <Link href="/notice/list" className={clsx(styles.navLink, { [styles.active]: pathname === '/notice/list' })}>
+              <Link
+                href="/notice/list"
+                className={clsx(styles.navLink, { [styles.active]: pathname === '/notice/list' })}
+              >
                 공지사항
               </Link>
             </li>

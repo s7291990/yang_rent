@@ -281,6 +281,28 @@
 .paymentContainer .btnPayment.nextButton{
   display: none;
 }
+.couponContainer{
+  display: flex;
+  width: 335px;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.couponButton{
+  width: 115px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 0;
+  background: #005296;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
 @media (max-width: 1200px) {
   .main{
     padding: 150px 20px;
@@ -458,5 +480,8 @@
   }
   .paymentForm .title{
     display: none;
+  }
+  .couponContainer{
+    width: 100%;
   }
 }

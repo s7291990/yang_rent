@@ -8,7 +8,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { ReviewItem } from '@/components/common';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { fetchNotice, fetchReview } from '@/feature/home/controller';
+import { fetchReview } from '@/feature/home/controller';
 import { useReviewStore } from '@/feature/home/store';
 
 interface InputProps {
