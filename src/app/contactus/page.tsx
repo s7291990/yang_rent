@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './page.module.css';
 import { FormItem, FormTextarea } from '@/components/common';
 
-export default function page() {
+export default function Page() {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');

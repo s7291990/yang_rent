@@ -8,7 +8,7 @@ import { fetchNoticeList } from '@/feature/notice/controller';
 import { NoticeRdo } from '@/feature/notice/model';
 import { useNoticeListStore, useNoticeViewStore } from '@/feature/notice/store';
 import { Loading } from '@/components/common';
-import { tr } from 'date-fns/locale';
+//import { tr } from 'date-fns/locale';
 
 export default function Page() {
   const [loading, setLoading] = useState(true);

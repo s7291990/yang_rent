@@ -76,7 +76,7 @@ export default function Page() {
 
   // 렌트 아이템 클릭시
   const goToItemDetail = (id: number) => {
-    let detailCarInfo = cars.find((item) => item.id === id);
+    const detailCarInfo = cars.find((item) => item.id === id);
     console.log(detailCarInfo);
     if (!detailCarInfo) return;
     setPayment({

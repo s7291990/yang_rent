@@ -5,8 +5,7 @@ import { fetchRentList } from '@/feature/payment/controller';
 
 declare global {
   interface Window {
-    //PortOne: any;
-    IMP: any;
+    IMP: Record<string, unknown>;
   }
 }
 
