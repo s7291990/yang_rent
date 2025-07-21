@@ -38,7 +38,7 @@ export default function Modal({
           <div className={styles.modalContent}>
             <div className={styles.modalTitle}>{title}</div>
             <button type="button" className={styles.modalCloseButton} onClick={handleClose}>
-              <img src="/image/ico/ico-modal-close.svg" />
+              <img src="/image/ico/ico-modal-close.svg" alt="" />
             </button>
             <div className={styles.modalScrolls}>{children}</div>
           </div>

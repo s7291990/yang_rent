@@ -98,7 +98,7 @@ export default function index() {
               </button>
             )}
             <button type="button" className={styles.hamburger} onClick={handleTotalMenuOpen}>
-              <img src="/image/ico/ico-totalmenu.svg" />
+              <img src="/image/ico/ico-totalmenu.svg" alt="" />
             </button>
           </div>
         </nav>
@@ -107,7 +107,7 @@ export default function index() {
       <div className={clsx(styles.totalMenuContainer, { [styles.active]: totalMenu })}>
         <div className={styles.totalMenuItem}>
           <button type="button" className={styles.totalMenuClose} onClick={handleTotalMenuClose}>
-            <img src="/image/ico/ico-close-white.svg" />
+            <img src="/image/ico/ico-close-white.svg" alt="" />
           </button>
           <ul className={styles.mobMenu}>
             <li className={styles.navItem} data-menu="company">

@@ -20,15 +20,15 @@ export default function page() {
           <div className={styles.loginDesc}>SNS로 간편하게 회원가입이 가능합니다</div>
           <div className={styles.loginFormItem}>
             <button type="button" className={styles.btnKakao} onClick={() => signIn('kakao')}>
-              <img src="/image/ico/ico-login-kakao.svg" />
+              <img src="/image/ico/ico-login-kakao.svg" alt="" />
               <span>카카오로 계속하기</span>
             </button>
             <button type="button" className={styles.btnNaver} onClick={() => signIn('naver')}>
-              <img src="/image/ico/ico-login-naver.svg" />
+              <img src="/image/ico/ico-login-naver.svg" alt="" />
               <span>네이버 계속하기</span>
             </button>
             <button type="button" className={styles.btnGoogle} onClick={() => signIn('google')}>
-              <img src="/image/ico/ico-login-google.svg" />
+              <img src="/image/ico/ico-login-google.svg" alt="" />
               <span>Google로 계속하기</span>
             </button>
           </div>

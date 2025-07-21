@@ -11,7 +11,6 @@ import { useRouter } from 'next/navigation';
 import moment from 'moment';
 
 // 결제 정보
-import { usePaymentStore } from '@/feature/payment/store';
 
 export default function page() {
   // 초기 날짜 설정
@@ -30,7 +29,7 @@ export default function page() {
 
   const router = useRouter();
   const { searchForm, setSearchForm } = useSearchFormStore();
-  const { Payment, setPayment } = usePaymentStore();
+  //const { Payment, setPayment } = usePaymentStore();
   const cars = useCarsStore((state) => state.Cars);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -46,21 +45,6 @@ export default function page() {
     // cars는 전체 데이터
     setCarData(sortCarsByRegion(cars, activeRegion));
   }, [cars, activeRegion]);
-
-  // 탭메뉴 상태관리
-  const [activeMenu, setActiveMenu] = useState<number>(0);
-
-  // 탭 이벤트 관리
-  const handleMenu = (index: number, manufacturerCode: string) => {
-    setActiveMenu(index);
-    console.log(index, manufacturerCode);
-    // 전체
-    if (index === 0) {
-      setCarData(cars);
-    } else {
-      setCarData(cars.filter((item) => item.manufacturerCode === manufacturerCode));
-    }
-  };
 
   const regions = [
     { code: 'all', label: '전국' },

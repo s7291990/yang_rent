@@ -11,7 +11,8 @@ interface ContactProps {
 }
 
 export default function Contact({ isContactOpen, onClose }: ContactProps) {
-  const { phone, setPhone, msg, setMsg, result, setResult, sendSms } = useSms('', '');
+  //phone, setPhone, msg, setMsg, result, setResult,
+  const { sendSms } = useSms('', '');
   const { Contact, setContact } = useContactStore();
   const [agree, setAgree] = React.useState(false);
 

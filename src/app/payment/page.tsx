@@ -4,9 +4,7 @@ import styles from './page.module.css';
 import { FormItem } from '@/components/common';
 import { useRouter } from 'next/navigation';
 
-import { useSms } from '@/feature/common/sms/helper/useSms';
 import { usePaymentStore, useRentListStore } from '@/feature/payment/store';
-import { RentRdo } from '@/feature/payment/model';
 import clsx from 'clsx';
 import AddressSearch from '@/components/common/AddressSearch';
 import {
@@ -26,7 +24,7 @@ export default function page() {
   const nowTime = moment().format('YYYY.MM.DD');
 
   // 문자 보내기
-  const { phone, setPhone, msg, setMsg, result, setResult, sendSms } = useSms('', '');
+  //const { phone, setPhone, msg, setMsg, result, setResult, sendSms } = useSms('', '');
 
   const { Payment, setPayment } = usePaymentStore();
 
@@ -96,8 +94,8 @@ export default function page() {
     // );
 
     // 데이터 상태관리
-    const rentList = useRentListStore((state) => state.RentList);
-    const [rentData, setRentData] = useState<RentRdo[]>(rentList);
+    //const rentList = useRentListStore((state) => state.RentList);
+    //const [rentData, setRentData] = useState<RentRdo[]>(rentList);
     useEffect(() => {
       fetchRentList();
     }, []);
@@ -131,7 +129,7 @@ export default function page() {
               history.back();
             }}
           >
-            <img src="/image/ico/ico-back.svg" />
+            <img src="/image/ico/ico-back.svg" alt="" />
             <span>결제하기</span>
           </button>
         </div>
@@ -140,7 +138,7 @@ export default function page() {
 
           <div className={styles.carContainer}>
             <div className={styles.carImage}>
-              <img src={Payment.carImage} />
+              <img src={Payment.carImage} alt="" />
             </div>
             <div className={styles.carCont}>
               <div className={styles.carInfo}>
@@ -322,7 +320,7 @@ export default function page() {
         {/** 정보 예상 금액 영역 */}
         <div className={clsx(styles.titleMob, styles.reulstTitle)}>
           <button type="button" onClick={handleBack}>
-            <img src="/image/ico/ico-back.svg" />
+            <img src="/image/ico/ico-back.svg" alt="" />
             <span>결제하기</span>
           </button>
         </div>

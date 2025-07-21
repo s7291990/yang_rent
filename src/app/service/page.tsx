@@ -21,7 +21,7 @@ export default function page() {
           </div>
         </div>
         <div className={styles.image}>
-          <img src="/image/etc/etc-service-about.png" />
+          <img src="/image/etc/etc-service-about.png" alt="" />
         </div>
       </div>
 
@@ -59,7 +59,7 @@ export default function page() {
               <button type="button">1:1렌트 상담하기</button>
             </div>
             <div className={styles.image}>
-              <img src="/image/etc/etc-service-use01.jpg" />
+              <img src="/image/etc/etc-service-use01.jpg" alt="" />
             </div>
           </li>
           <li>
@@ -78,7 +78,7 @@ export default function page() {
               <button type="button">단기렌트 예약하기</button>
             </div>
             <div className={styles.image}>
-              <img src="/image/etc/etc-service-use02.jpg" />
+              <img src="/image/etc/etc-service-use02.jpg" alt="" />
             </div>
           </li>
           <li>
@@ -97,7 +97,7 @@ export default function page() {
               <button type="button">1:1렌트 상담하기</button>
             </div>
             <div className={styles.image}>
-              <img src="/image/etc/etc-service-use03.jpg" />
+              <img src="/image/etc/etc-service-use03.jpg" alt="" />
             </div>
           </li>
         </ul>

@@ -17,7 +17,7 @@ export default function index({ title = '', desc, image = '', name, car, onClick
       <div className={styles.desc}>{desc}</div>
       <div className={styles.colsItem}>
         <div className={styles.profile}>
-          <img src={image} />
+          <img src={image} alt="" />
         </div>
         <div className={styles.info}>
           <span>{name}</span>

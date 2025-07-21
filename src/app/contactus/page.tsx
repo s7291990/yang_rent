@@ -1,16 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './page.module.css';
-import { useRouter } from 'next/navigation';
 import { FormItem, FormTextarea } from '@/components/common';
 
 export default function page() {
-  const router = useRouter();
-
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  const [result, setResult] = useState<string | null>(null);
 
   const handleSubmit = async () => {
     const res = await fetch('/api/contact', {

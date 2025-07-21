@@ -168,7 +168,7 @@ export default function page() {
             <div className={styles.title}>검색결과</div>
             <div className={styles.helpWrap}>
               <Link href="#" onClick={(e) => e.preventDefault()}>
-                <img src="/image/ico/ico-help.svg" />
+                <img src="/image/ico/ico-help.svg" alt="" />
                 <span>유종은 어떻게 확인하나요?</span>
                 <div className={styles.tooltip}>
                   <ul>

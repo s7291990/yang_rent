@@ -9,7 +9,7 @@
   height: 320px;
   border-radius: 40px;
   overflow: hidden;
-  background: url(/image/bg/bg-sub-notice.jpg) no-repeat center top;
+  background: url('/image/bg/bg-sub-notice.jpg') no-repeat center top;
   background-size: cover;
 }
 .subVisual .title{

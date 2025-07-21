@@ -52,11 +52,3 @@ export default function index({
     </>
   );
 }
-
-// 시간 포맷 함수 추가
-function formatTime(date: Date | null) {
-  if (!date) return '';
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  return `${hours}:${minutes}`;
-}

@@ -36,7 +36,7 @@ export default function index({
 
   const [selectedSido, setSelectedSido] = useState<string | null>(null);
   const [selectedCar, setSelectedCar] = useState<string | null>(null);
-  const [selectedNegligence, setSelectedNegligence] = useState<string | null>(null);
+  //const [selectedNegligence, setSelectedNegligence] = useState<string | null>(null);
 
   // areaList01: 시/도 목록
   const areaList01 = address.map((item) => item.sido);

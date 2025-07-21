@@ -44,7 +44,8 @@ export default function page() {
   }, []);
 
   // 문자 보내기
-  const { phone, setPhone, msg, setMsg, result, setResult, sendSms } = useSms('', '');
+  //phone, setPhone, msg, setMsg, result, setResult,
+  const { sendSms } = useSms('', '');
   const { QuickReservation, setQuickReservation } = useQuickReservationStore();
 
   // 버튼 클릭 시 store에 저장 (이미 store에 반영된 값이므로 setContact(Contact) 호출)
@@ -292,7 +293,7 @@ export default function page() {
         <div className={styles.homeTrust}>
           <div className={styles.rela}>
             <div className={styles.image}>
-              <img src="/image/etc/etc-trust-image.png" />
+              <img src="/image/etc/etc-trust-image.png" alt="" />
             </div>
             <div className={styles.cont}>
               <div className={styles.cate}>TRUST</div>
@@ -305,7 +306,7 @@ export default function page() {
               <ul>
                 <li>
                   <div className={styles.icon}>
-                    <img src="/image/ico/ico-trust-list01.svg" />
+                    <img src="/image/ico/ico-trust-list01.svg" alt="" />
                   </div>
                   <div className={styles.rowsItem}>
                     <div className={styles.key}>최고급 라인업</div>
@@ -314,7 +315,7 @@ export default function page() {
                 </li>
                 <li>
                   <div className={styles.icon}>
-                    <img src="/image/ico/ico-trust-list02.svg" />
+                    <img src="/image/ico/ico-trust-list02.svg" alt="" />
                   </div>
                   <div className={styles.rowsItem}>
                     <div className={styles.key}>완벽한 안전점검</div>
@@ -325,7 +326,7 @@ export default function page() {
                 </li>
                 <li>
                   <div className={styles.icon}>
-                    <img src="/image/ico/ico-trust-list03.svg" />
+                    <img src="/image/ico/ico-trust-list03.svg" alt="" />
                   </div>
                   <div className={styles.rowsItem}>
                     <div className={styles.key}>편리하고 정확한 서비스</div>
@@ -410,7 +411,7 @@ export default function page() {
                 <br />
                 빠르게 알려드릴게요
               </div>
-              <img src="/image/ico/ico-qna-item.png" />
+              <img src="/image/ico/ico-qna-item.png" alt="" />
             </div>
             <ul>
               <li>
@@ -423,7 +424,7 @@ export default function page() {
                   }}
                 >
                   <div className={styles.title}>장기렌트 시, 추가 운전자를 등록할 수 있나요?</div>
-                  <img src="/image/ico/ico-plus.svg" />
+                  <img src="/image/ico/ico-plus.svg" alt="" />
                 </Link>
               </li>
               <li>
@@ -436,7 +437,7 @@ export default function page() {
                   }}
                 >
                   <div className={styles.title}>대차 차량을 집으로 배달받을 수 있나요?</div>
-                  <img src="/image/ico/ico-plus.svg" />
+                  <img src="/image/ico/ico-plus.svg" alt="" />
                 </Link>
               </li>
               <li>
@@ -449,7 +450,7 @@ export default function page() {
                   }}
                 >
                   <div className={styles.title}>출고가 바로 가능한가요?</div>
-                  <img src="/image/ico/ico-plus.svg" />
+                  <img src="/image/ico/ico-plus.svg" alt="" />
                 </Link>
               </li>
               <li>
@@ -464,7 +465,7 @@ export default function page() {
                   <div className={styles.title}>
                     무심사 장기렌트는 신차, 중고차 모두 가능한가요?
                   </div>
-                  <img src="/image/ico/ico-plus.svg" />
+                  <img src="/image/ico/ico-plus.svg" alt="" />
                 </Link>
               </li>
             </ul>
@@ -482,11 +483,11 @@ export default function page() {
             </Link>
           </div>
           <div className={styles.image}>
-            <img src={notices[0]?.image} />
+            <img src={notices[0]?.image} alt="" />
           </div>
           <Link href="/notice/list" className={styles.noticeMore}>
             <span>전체보기</span>
-            <img src="/image/ico/ico-arrow-right.svg" />
+            <img src="/image/ico/ico-arrow-right.svg" alt="" />
           </Link>
         </div>
 
@@ -516,7 +517,7 @@ export default function page() {
                 setQnaContent({ ...qnaContent, id: 0 });
               }}
             >
-              <img src="/image/ico/ico-close-gray.svg" />
+              <img src="/image/ico/ico-close-gray.svg" alt="" />
             </button>
             <div className={styles.title}>{qnaContent.title}</div>
             <div className={styles.description}>{qnaContent.description}</div>
