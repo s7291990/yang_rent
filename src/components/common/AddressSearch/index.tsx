@@ -2,9 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { FormItem } from '@/components/common';
 
-interface Window {
-  daum: any;
-}
 interface DaumPostcodeData {
   address: string;
   addressType: string;

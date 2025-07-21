@@ -133,11 +133,11 @@ async function doFetchAndLog() {
 }
 
 // PortOne 응답 타입 정의 (실제 구조에 맞게 필요시 수정)
-type PortOneIdentityVerificationResponse = {
-  imp_uid: string;
-  success: boolean;
-  // ... 기타 필드
-};
+// type PortOneIdentityVerificationResponse = {
+//   imp_uid: string;
+//   success: boolean;
+//   // ... 기타 필드
+// };
 
 type PortOnePaymentResponse = {
   imp_uid: string;
