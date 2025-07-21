@@ -4,7 +4,7 @@ import styles from './page.module.css';
 import { FormItem } from '@/components/common';
 import { useRouter } from 'next/navigation';
 
-import { usePaymentStore, useRentListStore } from '@/feature/payment/store';
+import { usePaymentStore } from '@/feature/payment/store';
 import clsx from 'clsx';
 import AddressSearch from '@/components/common/AddressSearch';
 import {

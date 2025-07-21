@@ -1,14 +1,14 @@
 declare global {
   interface Window {
-    daum: any;
+    daum: Record<string, unknown>;
   }
 }
 declare module "@portone/browser-sdk/v2" {
-  export function requestIdentityVerification(params: any): void;
+  export function requestIdentityVerification(params: Record<string, unknown>): void;
 }
 interface Window {
   SmartroPay?: {
-    pay: (params: any) => void;
+    pay: (params: Record<string, unknown>) => void;
   };
 }
 export { };

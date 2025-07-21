@@ -1,6 +1,5 @@
 import { create } from 'zustand';
 import { Car, SearchDto } from '../model';
-import { ContactDto } from '@/feature/modal/contact/model';
 
 interface CarStore {
   Cars: Car[];

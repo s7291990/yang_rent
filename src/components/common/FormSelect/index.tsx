@@ -12,7 +12,6 @@ interface InputProps {
   name?: string;
   value?: string;
   variant?: SelectType;
-  onClick?: () => void;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   required?: boolean;
 }
@@ -24,7 +23,6 @@ export default function FormSelect({
   name,
   value,
   variant = 'region',
-  onClick,
   onChange,
   required,
 }: InputProps) {

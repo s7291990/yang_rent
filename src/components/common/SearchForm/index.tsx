@@ -32,10 +32,15 @@ export default function SearchForm({ subTitle = '', dataType, children }: InputP
                   </div>
                   <div className={styles.title}>신들의 선택, 최고의 여정</div>
                   <div className={styles.image}>
-                    <img src="/image/etc/etc-home-slide-img01.png" className={styles.imagePc} />
+                    <img
+                      src="/image/etc/etc-home-slide-img01.png"
+                      className={styles.imagePc}
+                      alt=""
+                    />
                     <img
                       src="/image/etc/etc-home-slide-img01-mob.png"
                       className={styles.imageMob}
+                      alt=""
                     />
                   </div>
                   <button
@@ -58,10 +63,15 @@ export default function SearchForm({ subTitle = '', dataType, children }: InputP
                   </div>
                   <div className={styles.desc}>KT 지니TV 고객에게 추가 10% 할인 이벤트 진행 중</div>
                   <div className={styles.image}>
-                    <img src="/image/etc/etc-home-slide-img02.png" className={styles.imagePc} />
+                    <img
+                      src="/image/etc/etc-home-slide-img02.png"
+                      className={styles.imagePc}
+                      alt=""
+                    />
                     <img
                       src="/image/etc/etc-home-slide-img02-mob.png"
                       className={styles.imageMob}
+                      alt=""
                     />
                   </div>
                   <button
@@ -109,10 +119,10 @@ export default function SearchForm({ subTitle = '', dataType, children }: InputP
                 setEventModal(false);
               }}
             >
-              <img src="/image/ico/ico-close-gray.svg" />
+              <img src="/image/ico/ico-close-gray.svg" alt="" />
             </button>
             <div className={styles.image}>
-              <img src="/image/etc/etc-home-event.png" />
+              <img src="/image/etc/etc-home-event.png" alt="" />
             </div>
           </div>
         </div>

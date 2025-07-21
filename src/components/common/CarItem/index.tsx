@@ -33,7 +33,7 @@ export default function CarItem({
         )}
 
         <div className={styles.image}>
-          <img src={image} />
+          <img src={image} alt="" />
         </div>
         {price && (
           <div className={styles.price}>

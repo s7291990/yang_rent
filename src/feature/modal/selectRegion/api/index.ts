@@ -1,12 +1,12 @@
-import axios from 'axios';
+//import axios from 'axios';
 
-const instance = axios.create({
-  baseURL: 'http://localhost:4000', // 실제 API 서버 주소로 변경
-  timeout: 10000,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+// const instance = axios.create({
+//   baseURL: 'http://localhost:4000', // 실제 API 서버 주소로 변경
+//   timeout: 10000,
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// });
 
 export async function apiFetch() {
   const response = await fetch('/json/address.json');

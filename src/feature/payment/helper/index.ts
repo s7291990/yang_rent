@@ -1,7 +1,5 @@
 'use client';
-import { PaymentDto } from '@/feature/payment/model';
 import * as PortOne from '@portone/browser-sdk/v2';
-import { useEffect } from 'react';
 import { usePaymentStore, useRentListStore } from '@/feature/payment/store';
 import { fetchRentList } from '@/feature/payment/controller';
 

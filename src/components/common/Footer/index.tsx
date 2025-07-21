@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.footerContainer}>
         <div className={styles.footerLeft}>
           <div className={styles.flogo}>
-            <img src="/image/etc/etc-flogo.svg" />
+            <img src="/image/etc/etc-flogo.svg" alt="" />
             <span>신들의 선택, 올림포스렌터카</span>
           </div>
           <ul className={styles.fnbList}>
@@ -36,22 +36,22 @@ export default function Footer() {
             <ul>
               <li>
                 <Link href="#">
-                  <img src="/image/ico/ico-sns-list01.svg" />
+                  <img src="/image/ico/ico-sns-list01.svg" alt="" />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/image/ico/ico-sns-list02.svg" />
+                  <img src="/image/ico/ico-sns-list02.svg" alt="" />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/image/ico/ico-sns-list03.svg" />
+                  <img src="/image/ico/ico-sns-list03.svg" alt="" />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <img src="/image/ico/ico-sns-list04.svg" />
+                  <img src="/image/ico/ico-sns-list04.svg" alt="" />
                 </Link>
               </li>
             </ul>

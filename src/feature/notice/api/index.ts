@@ -1,4 +1,4 @@
-import axios from 'axios';
+//import axios from 'axios';
 
 // 공지 리스트 가져오기
 export async function apiNoticeListFetch() {
