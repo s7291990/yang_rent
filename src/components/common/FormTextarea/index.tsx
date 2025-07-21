@@ -17,7 +17,7 @@ interface InputProps {
   required?: boolean;
 }
 
-export default function index({
+export default function FormTextarea({
   label = ' ',
   className,
   placeholder = '문의 내용을 입력해주세요',

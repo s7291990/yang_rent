@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Contact from '@/components/common/Contact';
 
-export default function index() {
+export default function CourTesy() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleContactOpen = () => {
     setIsOpen(true);

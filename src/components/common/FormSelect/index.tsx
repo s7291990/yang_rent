@@ -17,7 +17,7 @@ interface InputProps {
   required?: boolean;
 }
 
-export default function index({
+export default function FormSelect({
   label = '',
   className,
   placeholder = '지역을 선택하세요',

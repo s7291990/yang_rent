@@ -10,7 +10,14 @@ interface InputProps {
   onClick?: () => void;
 }
 
-export default function index({ title = '', desc, image = '', name, car, onClick }: InputProps) {
+export default function ReviewItem({
+  title = '',
+  desc,
+  image = '',
+  name,
+  car,
+  onClick,
+}: InputProps) {
   return (
     <div className={styles.reviewItem} onClick={onClick}>
       <div className={styles.subject}>{title}</div>

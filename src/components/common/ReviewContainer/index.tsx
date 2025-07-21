@@ -17,7 +17,7 @@ interface InputProps {
   desc?: string;
 }
 
-export default function index({ cate, title, desc }: InputProps) {
+export default function ReviewContainer({ cate, title, desc }: InputProps) {
   const reviews = useReviewStore((state) => state.Reviews);
   useEffect(() => {
     fetchReview();

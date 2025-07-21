@@ -11,7 +11,14 @@ interface InputProps {
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-export default function index({ title = '', desc, type, image = '', price, onClick }: InputProps) {
+export default function CarItem({
+  title = '',
+  desc,
+  type,
+  image = '',
+  price,
+  onClick,
+}: InputProps) {
   return (
     <li className={styles.carListItem}>
       <Link href="#" onClick={onClick}>

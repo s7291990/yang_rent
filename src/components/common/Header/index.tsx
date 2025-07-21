@@ -8,7 +8,7 @@ import { usePathname, useRouter } from 'next/navigation';
 
 import { signOut, useSession } from 'next-auth/react';
 
-export default function index() {
+export default function Header() {
   const [totalMenu, setTotalMenu] = useState<boolean>(false);
   const handleTotalMenuOpen = () => {
     setTotalMenu(true);

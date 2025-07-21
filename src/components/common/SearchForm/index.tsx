@@ -15,7 +15,7 @@ interface InputProps {
   children?: React.ReactNode;
 }
 
-export default function index({ subTitle = '', dataType, children }: InputProps) {
+export default function SearchForm({ subTitle = '', dataType, children }: InputProps) {
   const router = useRouter();
   // EVENT 모달 팝업 상태
   const [eventModal, setEventModal] = useState<boolean>(false);

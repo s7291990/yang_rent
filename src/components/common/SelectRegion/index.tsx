@@ -24,7 +24,7 @@ interface SelectRegionProps {
   onSelectRegion?: (value: string) => void;
 }
 
-export default function index({
+export default function SelectRegion({
   variant = 'region',
   isSelectRegionOpen,
   onClose,

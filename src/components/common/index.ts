@@ -1,5 +1,5 @@
 export { default as CarItem } from './CarItem';
-export { default as footer } from './footer';
+export { default as Footer } from './Footer';
 export { default as FormItem } from './FormItem';
 export { default as FormTextarea } from './FormTextarea';
 export { default as FormSelect } from './FormSelect';

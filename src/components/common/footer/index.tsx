@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.css';
 import Link from 'next/link';
 
-export default function index() {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>

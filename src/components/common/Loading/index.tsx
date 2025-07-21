@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './index.module.css';
 
-export default function index() {
+export default function Loading() {
   return (
     <div className={styles.modal}>
       <div className={styles.loaderWrapper}>
