@@ -132,6 +132,20 @@ async function doFetchAndLog() {
   }
 }
 
+// PortOne 응답 타입 정의 (실제 구조에 맞게 필요시 수정)
+type PortOneIdentityVerificationResponse = {
+  imp_uid: string;
+  success: boolean;
+  // ... 기타 필드
+};
+
+type PortOnePaymentResponse = {
+  imp_uid: string;
+  merchant_uid: string;
+  success: boolean;
+  // ... 기타 필드
+};
+
 // NHN KCP V2 본인인증 연동
 export function requestKcpIdentityVerification() {
   // PortOne.requestIdentityVerification({
@@ -143,11 +157,11 @@ export function requestKcpIdentityVerification() {
   //     phoneNumber: "01088335559"
   //   },
   //   minAge: 19, // 인증 최소 나이(선택)
-  //   onSuccess: (res: any) => {
+  //   onSuccess: (res: PortOneIdentityVerificationResponse) => {
   //     console.log('인증 성공', res);
   //     alert('인증 성공: ' + JSON.stringify(res));
   //   },
-  //   onError: (err: any) => {
+  //   onError: (err: Error) => {
   //     console.log('인증 실패', err);
   //     alert('인증 실패: ' + JSON.stringify(err));
   //   },
@@ -168,14 +182,13 @@ export function requestSmartroPayment() {
     customer: {
       phoneNumber: '01012345678', // 구매자 연락처(필수)
     },
-    // @ts-expect-error
-    onSuccess: (res: any) => {
+    onSuccess: (res: PortOnePaymentResponse) => {
       alert('결제 성공: ' + JSON.stringify(res));
       // 결제 성공 후 처리
     },
-    onError: (err: any) => {
+    onError: (err: Error) => {
       alert('결제 실패: ' + JSON.stringify(err));
       // 결제 실패 후 처리
     },
-  });
+  } as any);
 }

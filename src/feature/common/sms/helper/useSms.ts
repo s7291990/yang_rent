@@ -1,9 +1,15 @@
 import { useState } from 'react';
 
+type SmsResult = {
+  result: string;
+  message?: string;
+  // 필요하다면 추가 필드
+};
+
 export function useSms(defaultPhone = '', defaultMsg = '') {
   const [phone, setPhone] = useState(defaultPhone);
   const [msg, setMsg] = useState(defaultMsg);
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<SmsResult | null>(null);
 
   const sendSms = async (phoneParam?: string, msgParam?: string, showAlert: boolean = true) => {
     const phoneToSend = phoneParam || phone;
@@ -13,9 +19,8 @@ export function useSms(defaultPhone = '', defaultMsg = '') {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ phone: phoneToSend, msg: msgToSend }),
     });
-    const data = await res.json();
+    const data: SmsResult = await res.json();
     setResult(data);
-    // result가 1일 때만 성공 알림
     if (showAlert) {
       if (data.result === "100") {
         alert('정상적으로 문자 전송되었습니다.');

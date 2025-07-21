@@ -13,6 +13,16 @@ import { isMobile } from 'react-device-detect';
 
 export type DataType = 'datepicker' | 'timepicker' | 'range';
 
+interface DateRangeChangeEvent {
+  target: {
+    value: {
+      startDate: string;
+      endDate: string;
+    };
+    name: string;
+  };
+}
+
 interface InputProps {
   label?: string;
   className?: string;
@@ -20,7 +30,7 @@ interface InputProps {
   value?: string; // startDate
   endValue?: string; // endDate
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void; // startDate
-  onChangeEnd?: (e: React.ChangeEvent<HTMLInputElement>) => void; // endDate
+  onChangeEnd?: (e: DateRangeChangeEvent | React.ChangeEvent<HTMLInputElement>) => void; // endDate
   onClick?: (e: React.MouseEvent<HTMLInputElement>) => void;
   name?: string;
   type?: string;
@@ -57,12 +67,12 @@ const FormItem = forwardRef<HTMLInputElement, InputProps>(function FormItem(
   const formatDate = (date: Date | null) =>
     date
       ? date
-          .toLocaleDateString('ko-KR', {
-            year: 'numeric',
-            month: '2-digit',
-            day: '2-digit',
-          })
-          .replace(/\.\s*$/, '')
+        .toLocaleDateString('ko-KR', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+        })
+        .replace(/\.\s*$/, '')
       : '';
 
   const formatDate01 = (date: Date | null, format: string = 'YYYY-MM-DD') => {
@@ -296,7 +306,7 @@ const FormItem = forwardRef<HTMLInputElement, InputProps>(function FormItem(
                       },
                       name: 'dateRange', // 커스텀 네이밍
                     },
-                  } as any);
+                  });
                   // 시작일과 종료일이 다를 때만 닫기
                   if (start.getTime() !== end.getTime()) {
                     setShowDateRange(false);
