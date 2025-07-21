@@ -54,8 +54,8 @@ export default function ReviewContainer({ cate, title, desc }: InputProps) {
               },
             }}
           >
-            {reviews.map((item) => (
-              <SwiperSlide>
+            {reviews.map((item, idx) => (
+              <SwiperSlide key={idx}>
                 <ReviewItem
                   title={item.title}
                   desc={item.description}

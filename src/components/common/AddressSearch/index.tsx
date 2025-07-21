@@ -10,6 +10,7 @@ interface DaumPostcodeData {
   buildingName: string;
   // ...필요한 필드만 추가
 }
+
 export default function AddressSearch({ onChange }: { onChange: (addr: string) => void }) {
   const [address, setAddress] = useState('');
 
@@ -25,8 +26,7 @@ export default function AddressSearch({ onChange }: { onChange: (addr: string) =
 
   const handleInputClick = () => {
     if (window.daum && window.daum.Postcode) {
-      // 타입스크립트 constructable 에러 우회
-      new (window.daum as any).Postcode({
+      new window.daum.Postcode({
         oncomplete: function (data: DaumPostcodeData) {
           setAddress(data.address);
           if (onChange) onChange(data.address); // 상위로 전달
@@ -47,3 +47,5 @@ export default function AddressSearch({ onChange }: { onChange: (addr: string) =
     />
   );
 }
+
+export { };

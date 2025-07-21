@@ -43,6 +43,10 @@ export default function Page() {
 
   const isReady = Payment.startDate && Payment.startTime && Payment.endDate && Payment.endTime;
 
+  useEffect(() => {
+    fetchRentList();
+  }, []);
+
   // 버튼 클릭 시 store에 저장
   const handleSavePayment = () => {
     if (!Payment.startDate) {
@@ -96,9 +100,7 @@ export default function Page() {
     // 데이터 상태관리
     //const rentList = useRentListStore((state) => state.RentList);
     //const [rentData, setRentData] = useState<RentRdo[]>(rentList);
-    useEffect(() => {
-      fetchRentList();
-    }, []);
+
   };
 
   // 딜리버리
@@ -343,9 +345,9 @@ export default function Page() {
                 <div className={styles.key}>이용 기간</div>
                 <div className={styles.value}>
                   {!Payment.startDate &&
-                  !Payment.startTime &&
-                  !Payment.endDate &&
-                  !Payment.endTime ? (
+                    !Payment.startTime &&
+                    !Payment.endDate &&
+                    !Payment.endTime ? (
                     <>로딩 중...</>
                   ) : isReady ? (
                     <>
@@ -418,12 +420,12 @@ export default function Page() {
 
             <div className={styles.totalInfo}>
               <div className={styles.key}>총 결제 금액</div>
-              <div className={styles.value}>{Payment.totalPrice.toLocaleString()}원</div>
+              <div className={styles.value}>{Payment.totalPrice.toLocaleString() || 0}원</div>
             </div>
           </div>
 
           <button type="button" className={styles.btnPayment} onClick={handleSavePayment}>
-            {Payment.totalPrice.toLocaleString()}원 결제하기
+            {Payment.totalPrice.toLocaleString() || 0}원 결제하기
           </button>
         </div>
       </div>
