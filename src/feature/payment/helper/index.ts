@@ -5,14 +5,15 @@ import { fetchRentList } from '@/feature/payment/controller';
 
 declare global {
   interface Window {
-    IMP: Record<string, unknown>;
+    //PortOne: any;
+    IMP: any;
   }
 }
 
 export function getDayOfWeek(dateStr: string) {
   if (!dateStr) return '';
   // 다양한 포맷 지원: '2025-07-23', '2025. 07. 23', '2025/07/23'
-  let normalized = dateStr.replace(/\./g, '/').replace(/-/g, '/').replace(/\s/g, '');
+  const normalized = dateStr.replace(/\./g, '/').replace(/-/g, '/').replace(/\s/g, '');
   const date = new Date(normalized);
   if (isNaN(date.getTime())) return '';
   const days = ['일', '월', '화', '수', '목', '금', '토'];
@@ -103,7 +104,7 @@ async function doFetchAndLog() {
             : '';
   const rentDay = Number(updatedPayment.rentDate);
   const carName = updatedPayment.carName;
-  let searchData = rentList.find(
+  const searchData = rentList.find(
     (item) =>
       item.age_range === insuranceAgeRange && // 나이 검색
       item.rent_day === rentDay && // 렌트 기간
@@ -167,7 +168,7 @@ export function requestSmartroPayment() {
     customer: {
       phoneNumber: '01012345678', // 구매자 연락처(필수)
     },
-    // @ts-ignore
+    // @ts-expect-error
     onSuccess: (res: any) => {
       alert('결제 성공: ' + JSON.stringify(res));
       // 결제 성공 후 처리
